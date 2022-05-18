@@ -1,0 +1,14 @@
+.navigation__list {
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+}
+ 
+.header {
+    display: flex;
+}
+
+.mobile-button {
+    display: inline-block;
+    margin-left: auto;
+}
