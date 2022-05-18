@@ -1,10 +1,11 @@
 .hero {
     position: relative;
-    background-image: linear-gradient( 
-        to right,
-        rgba(255, 255, 255, 0.3), 
-        rgba(255, 255, 255, 0.3)
-    ), url('../../../images/desktop-hero-min.png');
+    background-image: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0.3),
+            rgba(255, 255, 255, 0.3)
+        ),
+        url('../../../images/desktop-hero-min.png');
     background-size: cover;
 }
 
@@ -54,16 +55,33 @@
     text-align: center;
 }
 
-.hero__submenu:hover ~ .hero__list {
-    display: block;
-}
-
 .hero__submenu {
     position: absolute;
-    top: 80%;
+    top: 500px;
     left: 50%;
     transform: translate(-50%, -50%);
     display: inline-block;
+
+    &:hover ~ .hero__list {
+        display: block;
+    }
+}
+
+.hero__item {
+    margin-bottom: 33px;
+
+    &:first-child {
+        margin-top: 33px;
+    }
+}
+
+.hero__link {
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    color: $accentColor;
 }
 
 .hero__hidden-text {
