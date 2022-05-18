@@ -1,39 +1,75 @@
+.hero {
+    position: relative;
+    background-image: linear-gradient( 
+        to right,
+        rgba(255, 255, 255, 0.3), 
+        rgba(255, 255, 255, 0.3)
+    ), url('../../../images/desktop-hero-min.png');
+    background-size: cover;
+}
+
+.hero div {
+    width: 100%;
+    height: 1px;
+    color: transparent;
+}
+
 .hero__title {
-  text-align: center;
-  font-family: 'Sail';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 60px;
-  line-height: 1;
-  letter-spacing: -0.075em;
-  color: $titleColor;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: right;
+    font-family: 'Sail';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -0.075em;
+    color: $titleColor;
 }
 
 .hero__subtitle {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 47px;
+    text-align: right;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
 }
 
 .hero__text {
-  font-family: 'Libre Baskerville';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.2;
-  letter-spacing: 0.105em;
+    margin-top: 0;
+    margin-bottom: 325px;
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0.105em;
 }
 
 .hero__list {
     display: none;
+    text-align: center;
 }
 
-.hero__submenu:hover ~.hero__list {
+.hero__submenu:hover ~ .hero__list {
     display: block;
+}
+
+.hero__submenu {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
 }
 
 .hero__hidden-text {
     display: none;
+}
+
+.bold {
+    font-weight: 700;
 }
