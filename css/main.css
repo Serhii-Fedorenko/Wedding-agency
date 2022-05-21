@@ -578,8 +578,8 @@ button {
 .faq__box {
   min-height: 740px;
   background-image: url("../../../images/DSC09112 1-min.png");
-  background-size: cover;
-  background-position: -130px -150px;
+  background-size: 570px auto;
+  background-position: -130px -100px;
   background-repeat: no-repeat;
 }
 
@@ -622,5 +622,44 @@ button {
   line-height: 1.2;
   letter-spacing: 0.05em;
   color: #464646;
+}
+
+.wedding-stories__title {
+  margin-bottom: 0;
+  text-align: center;
+  font-family: 'Sail';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 39px;
+  line-height: 1;
+  letter-spacing: -0.08em;
+  color: #464646;
+}
+
+.wedding-stories__call {
+  margin-top: 0;
+  text-align: center;
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #D59D40;
+}
+
+.wedding-stories__text {
+  display: none;
+}
+
+.wedding-stories__album {
+  display: none;
+}
+
+.wedding-stories__albums {
+  height: 450px;
+  background-image: url("../../../images/Group 14-min.jpg");
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 /*# sourceMappingURL=main.css.map */
