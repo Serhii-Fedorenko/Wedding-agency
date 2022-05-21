@@ -478,6 +478,7 @@ button {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 47px;
   width: 128px;
   height: 25px;
   text-align: center;
@@ -487,5 +488,18 @@ button {
   color: #ffffff;
   -webkit-box-shadow: -10px 0px 16px rgba(0, 0, 0, 0.2);
           box-shadow: -10px 0px 16px rgba(0, 0, 0, 0.2);
+}
+
+.testimonials__story-block {
+  display: none;
+}
+
+.pack {
+  display: block;
+  height: 630px;
+  background-image: url("../../../images/Rectangle 12-min.jpg");
+  background-size: auto 500px;
+  background-position: left top;
+  background-repeat: no-repeat;
 }
 /*# sourceMappingURL=main.css.map */
