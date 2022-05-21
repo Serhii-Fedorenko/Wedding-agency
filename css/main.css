@@ -401,10 +401,11 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 200px;
+  height: 195px;
   background-image: url("../../../images/Rectangle 5-min.jpg");
   background-size: 800px auto;
   background-position: center;
+  margin-bottom: 28px;
 }
 
 .portfolio__title {
@@ -428,5 +429,63 @@ button {
   border-radius: 5px;
   border-color: transparent;
   color: #ffffff;
+}
+
+.testimonials__title {
+  margin-top: 46px;
+  margin-bottom: 0;
+  text-align: center;
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+.testiomonials__span {
+  margin-top: 0;
+  margin-bottom: 32px;
+  text-align: center;
+  font-family: 'Libre Baskerville';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  text-transform: lowercase;
+}
+
+.testimonials__box::before {
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #D59D40;
+}
+
+.testimonials__text {
+  margin-top: 0;
+  margin-bottom: 59px;
+  text-align: center;
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.025em;
+}
+
+.testimonials__button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 128px;
+  height: 25px;
+  text-align: center;
+  background-color: #D59D40;
+  border-radius: 5px;
+  border-color: transparent;
+  color: #ffffff;
+  -webkit-box-shadow: -10px 0px 16px rgba(0, 0, 0, 0.2);
+          box-shadow: -10px 0px 16px rgba(0, 0, 0, 0.2);
 }
 /*# sourceMappingURL=main.css.map */

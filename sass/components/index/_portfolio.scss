@@ -1,10 +1,11 @@
 .portfolio {
     display: flex;
     flex-direction: column;
-    height: 200px;
+    height: 195px;
     background-image: url('../../../images/Rectangle\ 5-min.jpg');
     background-size: 800px auto;
     background-position: center;
+    margin-bottom: 28px;
 }
 
 .portfolio__title {
