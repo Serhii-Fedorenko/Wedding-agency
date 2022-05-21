@@ -1,0 +1,140 @@
+.exo__title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 1.1;
+
+    letter-spacing: -0.06em;
+    text-transform: uppercase;
+
+    color: $accentColor;
+}
+
+.exo__title-decor {
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 26px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 80px;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: $accentColor;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 80px;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: $accentColor;
+    }
+}
+
+.exo__span {
+    display: inline-block;
+    padding-left: 110px;
+    font-family: 'Sail';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1;
+
+    letter-spacing: 0.1em;
+    text-transform: lowercase;
+
+    color: $titleColor;
+}
+
+.exo__call {
+    margin: 0;
+    display: inline-block;
+    padding-left: 100px;
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 1.1;
+
+    letter-spacing: -0.055em;
+    text-transform: uppercase;
+}
+
+.exo__list {
+    text-align: center;
+}
+
+.exo__subtitle {
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3;
+    color: $accentColor;
+}
+
+.exo__text {
+    margin-bottom: 40px;
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+
+    text-align: center;
+    letter-spacing: 0.025em;
+}
+
+.exo__button {
+    width: 110px;
+    height: 30px;
+    margin-top: auto;
+    margin-bottom: 60px;
+    text-align: center;
+    background-color: $accentColor;
+    border-radius: 5px;
+    border-color: transparent;
+    color: #ffffff;
+    box-shadow: (-10px 0px 16px rgba(0, 0, 0, 0.2));
+
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.5;
+
+    text-align: center;
+    letter-spacing: -0.055em;
+}
+
+.exo__item {
+    position: relative;
+    // height: 280px;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: -1;
+        top: -8%;
+        left: 10%;
+        width: 80%;
+        height: 80%;
+        background-color: $bgc;
+    }
+}
+
+.exo__hide-span {
+    display: none;
+}
