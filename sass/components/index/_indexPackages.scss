@@ -1,12 +1,80 @@
 .pack {
-    display: block;
-    height: 630px;
-    background-image: url('../../../images/Rectangle\ 12-min.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 660px;
+    background-image: url('../../../images/Rectangle\ 62-min.jpg');
     background-size: auto 500px;
     background-position: left top;
     background-repeat: no-repeat;
 }
 
-// .pack__title {
-//     margin-top: 430px;
-// }
+.pack__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Sail';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 1;
+
+    color: #ffffff;
+}
+
+.pack__subtitle {
+    margin-top: 0;
+    margin-bottom: 26px;
+    text-align: center;
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+
+    letter-spacing: 0.04em;
+
+    &::after {
+        content: '';
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        height: 2px;
+        background-color: $accentColor;
+    }
+}
+
+.pack__call {
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-family: 'Libre Baskerville';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.1;
+
+    letter-spacing: 0.06em;
+}
+
+.pack__button {
+    margin-left: auto;
+    margin-right: auto;
+    width: 246px;
+    height: 47px;
+    text-align: center;
+    background-color: $accentColor;
+    border-radius: 5px;
+    border-color: transparent;
+    color: #ffffff;
+    box-shadow: (-10px 0px 16px rgba(0, 0, 0, 0.2));
+
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.5;
+}
