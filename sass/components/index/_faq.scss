@@ -1,0 +1,51 @@
+.faq__box {
+    min-height: 740px;
+    background-image: url('../../../images/DSC09112\ 1-min.png');
+    background-size: cover;
+    background-position: -130px -150px;
+    background-repeat: no-repeat;
+}
+
+.faq__list {
+    display: none;
+}
+
+.faq__title {
+    display: inline-block;
+    margin-top: 350px;
+    margin-bottom: 0;
+    padding-left: 100px;
+    font-family: 'Sail';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 1;
+    color: $accentColor;
+}
+
+.faq__subtitle {
+    display: inline-block;
+    margin-top: 0;
+    padding-left: 110px;
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.2;
+
+    color: $accentColor;
+}
+
+.faq__text {
+    display: inline-block;
+    padding-left: 128px;
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+
+    letter-spacing: 0.05em;
+
+    color: $titleColor;
+}
