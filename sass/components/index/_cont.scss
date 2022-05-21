@@ -1,0 +1,22 @@
+.cont__box {
+    // width: 100vw;
+    height: 225px;
+    background-image: url('../../../images/Rectangle\ 26-min.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.cont__title {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    font-family: 'Sail';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 1;
+
+    letter-spacing: -0.055em;
+
+    color: $accentColor;
+}
