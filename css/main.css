@@ -313,7 +313,7 @@ html, body {
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.6))), url("../../../images/desktop-hero-min.png");
   background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../../../images/desktop-hero-min.png");
   background-size: cover;
-  background-position: -100px 0px;
+  background-position: -160px 0px;
 }
 
 .hero__title {
@@ -845,11 +845,11 @@ html, body {
 
 .cont__call {
   margin-top: -10px;
-  margin-left: 160px;
+  margin-left: 165px;
   font-family: 'Libre Baskerville';
   font-style: normal;
   font-weight: 400;
-  font-size: 10px;
+  font-size: 9px;
   line-height: 1.1;
   letter-spacing: -0.015em;
   text-transform: uppercase;
@@ -863,6 +863,76 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 30px;
+}
+
+.cont__list {
+  position: relative;
+  padding-right: 10px;
+}
+
+.cont__list::before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: -15%;
+  left: -70%;
+  width: 170%;
+  height: 120%;
+  background-color: #F0F0F0;
+}
+
+.cont__item {
+  text-align: right;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.cont__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.cont__link {
+  color: #464646;
+}
+
+.cont__text--mobile {
+  margin-left: 10px;
+  width: 110px;
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.025em;
+  color: #464646;
+}
+
+.cont__button {
+  width: 110px;
+  height: 30px;
+  margin-top: auto;
+  margin-left: 10px;
+  text-align: center;
+  background-color: #D59D40;
+  border-radius: 5px;
+  border-color: transparent;
+  color: #ffffff;
+  -webkit-box-shadow: -10px 0px 16px rgba(0, 0, 0, 0.2);
+          box-shadow: -10px 0px 16px rgba(0, 0, 0, 0.2);
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: -0.055em;
 }
 /*# sourceMappingURL=main.css.map */
