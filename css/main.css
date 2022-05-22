@@ -704,7 +704,7 @@ html, body {
   position: relative;
   padding-top: 15px;
   padding-bottom: 15px;
-  margin-bottom: 26px;
+  margin-bottom: 56px;
 }
 
 .exo__title-decor::before {
@@ -725,7 +725,7 @@ html, body {
   right: 80px;
   display: block;
   width: 100%;
-  height: 2px;
+  height: 1px;
   background-color: #D59D40;
 }
 
@@ -829,14 +829,40 @@ html, body {
 
 .cont__title {
   display: inline-block;
-  padding: 10px;
+  padding: 5px 15px;
+  margin-top: 185px;
+  margin-bottom: 0;
+  margin-left: 70px;
   background-color: rgba(255, 255, 255, 0.6);
   font-family: 'Sail';
   font-style: normal;
   font-weight: 400;
   font-size: 35px;
   line-height: 1;
-  letter-spacing: -0.055em;
+  letter-spacing: -0.025em;
   color: #D59D40;
+}
+
+.cont__call {
+  margin-top: -10px;
+  margin-left: 160px;
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+}
+
+.cont__text--desktop {
+  display: none;
+}
+
+.cont__flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
 }
 /*# sourceMappingURL=main.css.map */
