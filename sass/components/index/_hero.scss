@@ -13,7 +13,7 @@
 
 .hero__title {
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 0;
     text-align: right;
     font-family: 'Sail';
@@ -57,7 +57,12 @@
     top: 500px;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: inline-block;
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-image: url('../../../images/arrow.png');
+    background-size: contain;
 
     &:hover ~ .hero__list {
         display: block;
