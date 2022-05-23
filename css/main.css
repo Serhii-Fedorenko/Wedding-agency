@@ -948,7 +948,7 @@ html {
   position: absolute;
   z-index: -1;
   top: -15%;
-  left: -70%;
+  left: -85%;
   width: 170%;
   height: 120%;
   background-color: #F0F0F0;
@@ -968,7 +968,21 @@ html {
 }
 
 .cont__link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #464646;
+}
+
+.cont__link:hover {
+  color: #D59D40;
+}
+
+.cont__link:hover .cont__item--icon {
+  fill: #D59D40;
 }
 
 .cont__text--mobile {
@@ -1002,5 +1016,9 @@ html {
   line-height: 1.5;
   text-align: center;
   letter-spacing: -0.055em;
+}
+
+.cont__item--icon {
+  margin-left: 10px;
 }
 /*# sourceMappingURL=main.css.map */

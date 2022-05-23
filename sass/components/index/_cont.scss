@@ -60,7 +60,7 @@
         position: absolute;
         z-index: -1;
         top: -15%;
-        left: -70%;
+        left: -85%;
         width: 170%;
         height: 120%;
         background-color: $bgc;
@@ -81,7 +81,17 @@
 }
 
 .cont__link {
+    display: inline-flex;
+    align-items: center;
     color: $titleColor;
+
+    &:hover {
+        color: $accentColor;
+    }
+
+    &:hover .cont__item--icon {
+        fill: $accentColor;
+    }
 }
 
 .cont__text--mobile {
@@ -117,4 +127,8 @@
 
     text-align: center;
     letter-spacing: -0.055em;
+}
+
+.cont__item--icon {
+    margin-left: 10px;
 }
