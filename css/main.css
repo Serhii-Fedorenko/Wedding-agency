@@ -544,6 +544,13 @@ html {
   margin-bottom: 28px;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio {
+    height: 385px;
+    background-size: 1600px auto;
+  }
+}
+
 .portfolio__title {
   margin-top: 120px;
   margin-bottom: 5px;
@@ -556,6 +563,13 @@ html {
   color: #ffffff;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio__title {
+    margin-top: 250px;
+    font-size: 41px;
+  }
+}
+
 .portfolio__button {
   width: 128px;
   height: 25px;
@@ -564,7 +578,20 @@ html {
   background-color: #D59D40;
   border-radius: 5px;
   border-color: transparent;
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5;
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__button {
+    width: 250px;
+    height: 50px;
+    font-size: 35px;
+  }
 }
 
 .testimonials__title {
