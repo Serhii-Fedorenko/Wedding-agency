@@ -447,8 +447,26 @@ html {
 }
 
 .hero__list {
+  position: relative;
   display: none;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__list {
+    padding-left: 50px;
+    text-align: left;
+  }
+  .hero__list::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 400px;
+    width: 2px;
+    height: 100%;
+    background-color: #D59D40;
+  }
 }
 
 .hero__submenu {
@@ -484,6 +502,12 @@ html {
   font-size: 18px;
   line-height: 1.2;
   color: #D59D40;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__link {
+    font-size: 21px;
+  }
 }
 
 .hero__hidden-text {

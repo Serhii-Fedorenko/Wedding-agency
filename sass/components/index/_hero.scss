@@ -74,8 +74,25 @@
 }
 
 .hero__list {
+    position: relative;
     display: none;
     text-align: center;
+
+    @media screen and (min-width: $tablet) {
+        padding-left: 50px;
+        text-align: left;
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 400px;
+            width: 2px;
+            height: 100%;
+            background-color: $accentColor;
+        }
+    }
 }
 
 .hero__submenu {
@@ -110,6 +127,10 @@
     font-size: 18px;
     line-height: 1.2;
     color: $accentColor;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 21px;
+    }
 }
 
 .hero__hidden-text {
