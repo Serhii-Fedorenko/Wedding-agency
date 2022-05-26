@@ -279,7 +279,6 @@ button {
 html,
 body {
   max-width: 100%;
-  overflow-x: hidden;
 }
 
 html {
@@ -673,6 +672,12 @@ html {
 
 .testimonials__story-block {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonials__story-block--test {
+    display: block;
+  }
 }
 
 .pack {

@@ -77,3 +77,9 @@
 .testimonials__story-block {
     display: none;
 }
+
+.testimonials__story-block--test {
+    @media screen and (min-width: $tablet) {
+        display: block;
+    }
+}
