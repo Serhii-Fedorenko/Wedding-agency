@@ -1,3 +1,10 @@
+.testimonials {
+    background-image: url('../../../images/Union.svg'), url('../../../images/Vector.svg');
+    background-repeat: no-repeat;
+    background-size: 135px auto;
+    background-position: 550px 220px, 50px 500px;
+}
+
 .testimonials__title {
     margin-top: 46px;
     margin-bottom: 0;
@@ -7,6 +14,10 @@
     font-weight: 400;
     font-size: 25px;
     line-height: 1.2;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 35px;
+    }
 }
 
 .testiomonials__span {
@@ -19,6 +30,10 @@
     font-size: 20px;
     line-height: 1;
     text-transform: lowercase;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 25px;
+    }
 }
 
 .testimonials__box {
@@ -32,16 +47,18 @@
         background-color: $accentColor;
     }
 
-    &::after {
-        content: '';
-        position: absolute;
-        z-index: -1;
-        top: 18%;
-        left: 10%;
-        display: block;
-        width: 80%;
-        height: 90%;
-        background-color: $bgc;
+    @media screen and (max-width: 767px) {
+        &::after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            top: 18%;
+            left: 10%;
+            display: block;
+            width: 80%;
+            height: 90%;
+            background-color: $bgc;
+        }
     }
 }
 
@@ -57,6 +74,10 @@
     font-size: 12px;
     line-height: 1.2;
     letter-spacing: 0.025em;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 14px;
+    }
 }
 
 .testimonials__button {
@@ -72,6 +93,10 @@
     border-color: transparent;
     color: #ffffff;
     box-shadow: (-10px 0px 16px rgba(0, 0, 0, 0.2));
+
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }
 }
 
 .testimonials__story-block {
@@ -82,4 +107,42 @@
     @media screen and (min-width: $tablet) {
         display: block;
     }
+}
+
+.testimonials__subtitle {
+    margin-bottom: 5px;
+    text-align: center;
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 1.1;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: $accentColor;
+
+    &__addition {
+        margin-top: 0;
+        margin-bottom: 34px;
+        text-align: center;
+        font-family: 'Libre Baskerville';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1;
+
+        letter-spacing: 0.06em;
+    }
+}
+
+.testimonials__story {
+    padding: 0 160px 90px;
+    font-family: 'Libre Baskerville';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.1;
+
+    letter-spacing: 0.06em;
 }
