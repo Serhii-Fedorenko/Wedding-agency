@@ -279,6 +279,7 @@ button {
 html,
 body {
   max-width: 100%;
+  overflow-x: hidden;
 }
 
 html {
@@ -366,7 +367,7 @@ html {
 
 .hero {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.6))), url("../../../images/desktop-hero-min.png");
   background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../../../images/desktop-hero-min.png");
   background-size: cover;
@@ -382,7 +383,7 @@ html {
 @media screen and (min-width: 768px) {
   .hero {
     background-image: url("../../../images/desktop-hero-min.png");
-    background-position: -100px 0px;
+    background-position: -180px 0px;
   }
 }
 
@@ -441,6 +442,8 @@ html {
   .hero__text {
     font-size: 20px;
     margin-left: 400px;
+    margin-bottom: 0;
+    padding-bottom: 325px;
     text-align: center;
   }
 }
@@ -749,6 +752,8 @@ html {
 }
 
 .pack {
+  position: relative;
+  z-index: -2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -766,7 +771,16 @@ html {
   background-repeat: no-repeat;
 }
 
+@media screen and (min-width: 768px) {
+  .pack {
+    height: 950px;
+    background-size: 770px auto;
+    background-position: 0 -80px;
+  }
+}
+
 .pack__title {
+  position: relative;
   margin-top: 0;
   margin-bottom: 10px;
   text-align: center;
@@ -776,6 +790,20 @@ html {
   font-size: 60px;
   line-height: 1;
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .pack__title::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 250%;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
 }
 
 .pack__subtitle {
