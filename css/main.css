@@ -1108,8 +1108,8 @@ html {
   .wedding-stories__albums {
     background-image: url("../../../images/Group 141-min.jpg");
     background-size: contain;
-    height: 450px;
-    background-position: bottom center;
+    height: 480px;
+    background-position: 0 85%;
     margin-bottom: 70px;
   }
 }
@@ -1125,6 +1125,8 @@ html {
   background-image: url("../../../images/arrow.png");
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-box-shadow: -10px 0px 16px rgba(0, 0, 0, 0.2);
+          box-shadow: -10px 0px 16px rgba(0, 0, 0, 0.2);
 }
 
 .wedding__button:hover ~ .wedding-stories__text {

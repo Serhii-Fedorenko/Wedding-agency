@@ -114,8 +114,8 @@
     @media screen and (min-width: $tablet) {
         background-image: url('../../../images/Group\ 141-min.jpg');
         background-size: contain;
-        height: 450px;
-        background-position: bottom center;
+        height: 480px;
+        background-position: 0 85%;
         margin-bottom: 70px;
     }
 }
@@ -131,6 +131,7 @@
     background-image: url('../../../images/arrow.png');
     background-repeat: no-repeat;
     background-position: center;
+    box-shadow: (-10px 0px 16px rgba(0, 0, 0, 0.2));
 
     &:hover ~ .wedding-stories__text {
         transform: translateY(0%);
