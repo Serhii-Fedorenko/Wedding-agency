@@ -994,6 +994,16 @@ html {
   color: #464646;
 }
 
+@media screen and (min-width: 768px) {
+  .wedding-stories__title {
+    text-align: right;
+    padding-right: 60px;
+    margin-bottom: 30px;
+    font-size: 80px;
+    letter-spacing: -0em;
+  }
+}
+
 .wedding-stories__call {
   margin-top: 0;
   text-align: center;
@@ -1003,6 +1013,14 @@ html {
   font-size: 12px;
   line-height: 1.2;
   color: #D59D40;
+}
+
+@media screen and (min-width: 768px) {
+  .wedding-stories__call {
+    text-align: right;
+    padding-right: 60px;
+    font-size: 25px;
+  }
 }
 
 .wedding-stories__text {
@@ -1028,8 +1046,51 @@ html {
   transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 768px) {
+  .wedding-stories__text {
+    position: static;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    padding: 0 50px;
+    height: 150px;
+    font-size: 20px;
+    line-height: 1.3;
+    background-color: transparent;
+  }
+}
+
 .wedding-stories__album {
   display: none;
+}
+
+.wedding-stories__button {
+  position: absolute;
+  z-index: 999;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: block;
+  width: 275px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  border: none;
+  background-color: #D59D40;
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 1.3;
+  letter-spacing: -0.055em;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .wedding-stories__button {
+    display: none;
+  }
 }
 
 .wedding-stories__albums {
@@ -1041,6 +1102,16 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   margin-bottom: 105px;
+}
+
+@media screen and (min-width: 768px) {
+  .wedding-stories__albums {
+    background-image: url("../../../images/Group 141-min.jpg");
+    background-size: contain;
+    height: 450px;
+    background-position: bottom center;
+    margin-bottom: 70px;
+  }
 }
 
 .wedding__button {
@@ -1059,6 +1130,12 @@ html {
 .wedding__button:hover ~ .wedding-stories__text {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
+}
+
+@media screen and (min-width: 768px) {
+  .wedding__button {
+    display: none;
+  }
 }
 
 .exo__title {
