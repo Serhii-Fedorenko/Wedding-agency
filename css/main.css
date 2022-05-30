@@ -1256,6 +1256,12 @@ html {
   color: #D59D40;
 }
 
+@media screen and (min-width: 768px) {
+  .exo__subtitle {
+    font-size: 25px;
+  }
+}
+
 .exo__text {
   margin-bottom: 40px;
   font-family: 'Libre Baskerville';
@@ -1265,6 +1271,13 @@ html {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.025em;
+}
+
+@media screen and (min-width: 768px) {
+  .exo__text {
+    padding: 0 70px;
+    font-size: 22px;
+  }
 }
 
 .exo__button {
@@ -1288,6 +1301,14 @@ html {
   letter-spacing: -0.055em;
 }
 
+@media screen and (min-width: 768px) {
+  .exo__button {
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
+
 .exo__item {
   position: relative;
 }
@@ -1302,6 +1323,15 @@ html {
   width: 80%;
   height: 80%;
   background-color: #F0F0F0;
+}
+
+@media screen and (min-width: 768px) {
+  .exo__item::before {
+    height: 90%;
+    width: 50%;
+    top: -12%;
+    left: 25%;
+  }
 }
 
 .exo__hide-span {
