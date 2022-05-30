@@ -1153,6 +1153,13 @@ html {
   color: #D59D40;
 }
 
+@media screen and (min-width: 768px) {
+  .exo__title {
+    margin-left: 250px;
+    font-size: 60px;
+  }
+}
+
 .exo__title-decor {
   position: relative;
   padding-top: 15px;
@@ -1171,6 +1178,12 @@ html {
   background-color: #D59D40;
 }
 
+@media screen and (min-width: 768px) {
+  .exo__title-decor::before {
+    left: 150px;
+  }
+}
+
 .exo__title-decor::after {
   content: '';
   position: absolute;
@@ -1178,8 +1191,14 @@ html {
   right: 80px;
   display: block;
   width: 100%;
-  height: 1px;
+  height: 2px;
   background-color: #D59D40;
+}
+
+@media screen and (min-width: 768px) {
+  .exo__title-decor::after {
+    right: 250px;
+  }
 }
 
 .exo__span {
@@ -1195,6 +1214,13 @@ html {
   color: #464646;
 }
 
+@media screen and (min-width: 768px) {
+  .exo__span {
+    margin-left: 50px;
+    font-size: 45px;
+  }
+}
+
 .exo__call {
   margin: 0;
   display: inline-block;
@@ -1206,6 +1232,15 @@ html {
   line-height: 1.1;
   letter-spacing: -0.055em;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .exo__call {
+    margin-top: 20px;
+    margin-left: 250px;
+    padding-left: 0;
+    font-size: 20px;
+  }
 }
 
 .exo__list {
