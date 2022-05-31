@@ -1349,6 +1349,12 @@ html {
   background-repeat: no-repeat;
 }
 
+@media screen and (min-width: 768px) {
+  .cont__box {
+    height: 480px;
+  }
+}
+
 .cont__title {
   display: inline-block;
   padding: 5px 15px;
@@ -1365,6 +1371,14 @@ html {
   color: #D59D40;
 }
 
+@media screen and (min-width: 768px) {
+  .cont__title {
+    margin-top: 390px;
+    margin-left: 200px;
+    font-size: 60px;
+  }
+}
+
 .cont__call {
   margin-top: -10px;
   margin-left: 165px;
@@ -1377,8 +1391,29 @@ html {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 768px) {
+  .cont__call {
+    margin-top: 0;
+    margin-left: 365px;
+    font-size: 16px;
+  }
+}
+
 .cont__text--desktop {
   display: none;
+  width: 370px;
+  padding-left: 40px;
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.1;
+}
+
+@media screen and (min-width: 768px) {
+  .cont__text--desktop {
+    display: block;
+  }
 }
 
 .cont__flexbox {
@@ -1421,6 +1456,17 @@ html {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .cont__item {
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.1;
+    color: #464646;
+  }
+}
+
 .cont__link {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1451,6 +1497,12 @@ html {
   color: #464646;
 }
 
+@media screen and (min-width: 768px) {
+  .cont__text--mobile {
+    display: none;
+  }
+}
+
 .cont__button {
   width: 110px;
   height: 30px;
@@ -1474,5 +1526,12 @@ html {
 
 .cont__item--icon {
   margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .cont__item--icon {
+    width: 30px;
+    height: 30px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

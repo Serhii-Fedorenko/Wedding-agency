@@ -8,6 +8,10 @@
     background-image: url('../../../images/Rectangle\ 26-min.jpg');
     background-size: 100% auto;
     background-repeat: no-repeat;
+
+    @media screen and (min-width: $tablet) {
+        height: 480px;
+    }
 }
 
 .cont__title {
@@ -26,6 +30,12 @@
     letter-spacing: -0.025em;
 
     color: $accentColor;
+
+    @media screen and (min-width: $tablet) {
+        margin-top: 390px;
+        margin-left: 200px;
+        font-size: 60px;
+    }
 }
 
 .cont__call {
@@ -38,10 +48,32 @@
     line-height: 1.1;
     letter-spacing: -0.015em;
     text-transform: uppercase;
+
+    @media screen and (min-width: $tablet) {
+        margin-top: 0;
+        margin-left: 365px;
+        font-size: 16px;
+    }
 }
 
 .cont__text--desktop {
     display: none;
+    width: 370px;
+    padding-left: 40px;
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.1;
+
+    @media screen and (min-width: $tablet) {
+        display: block;
+    }
+}
+
+.cont__flexbox--column {
+    @media screen and (min-width: $tablet) {
+    }
 }
 
 .cont__flexbox {
@@ -78,6 +110,16 @@
     &:not(:last-child) {
         margin-bottom: 20px;
     }
+
+    @media screen and (min-width: $tablet) {
+        font-family: 'Libre Baskerville';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 1.1;
+
+        color: $titleColor;
+    }
 }
 
 .cont__link {
@@ -105,6 +147,10 @@
 
     letter-spacing: 0.025em;
     color: $titleColor;
+
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }
 }
 
 .cont__button {
@@ -131,4 +177,9 @@
 
 .cont__item--icon {
     margin-left: 10px;
+
+    @media screen and (min-width: $tablet) {
+        width: 30px;
+        height: 30px;
+    }
 }
