@@ -112,6 +112,10 @@
     &:hover ~ .hero__list {
         display: block;
     }
+
+    @media screen and (min-width: $desktop) {
+        display: none;
+    }
 }
 
 .hero__item {
