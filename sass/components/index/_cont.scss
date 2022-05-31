@@ -96,6 +96,15 @@
         width: 170%;
         height: 120%;
         background-color: $bgc;
+
+        @media screen and (min-width: $tablet) {
+            left: -78%;
+        }
+    }
+
+    @media screen and (min-width: $tablet) {
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 }
 
@@ -109,6 +118,10 @@
 
     &:not(:last-child) {
         margin-bottom: 20px;
+
+        @media screen and (min-width: $tablet) {
+            margin-bottom: 40px;
+        }
     }
 
     @media screen and (min-width: $tablet) {
@@ -173,6 +186,13 @@
 
     text-align: center;
     letter-spacing: -0.055em;
+
+    @media screen and (min-width: $tablet) {
+        width: 200px;
+        height: 40px;
+        margin-left: 40px;
+        font-size: 20px;
+    }
 }
 
 .cont__item--icon {
