@@ -18,6 +18,12 @@
         background-image: url('../../../images/desktop-hero-min.png');
         background-position: -180px 0px;
     }
+
+    @media screen and (min-width: $desktop) {
+        height: 1200px;
+        background-size: contain;
+        background-position: 0 60px;
+    }
 }
 
 .hero__title {

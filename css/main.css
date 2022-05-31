@@ -455,6 +455,14 @@ html {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .hero {
+    height: 1200px;
+    background-size: contain;
+    background-position: 0 60px;
+  }
+}
+
 .hero__title {
   display: inline-block;
   margin-top: 30px;
