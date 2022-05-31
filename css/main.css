@@ -486,6 +486,13 @@ html {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .hero__title {
+    font-size: 140px;
+    margin-right: 40px;
+  }
+}
+
 .hero__subtitle {
   margin-top: 0;
   margin-bottom: 47px;
@@ -500,6 +507,13 @@ html {
 @media screen and (min-width: 768px) {
   .hero__subtitle {
     font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero__subtitle {
+    font-size: 30px;
+    margin-right: 40px;
   }
 }
 
@@ -521,6 +535,14 @@ html {
     margin-bottom: 0;
     padding-bottom: 325px;
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero__text {
+    font-size: 26px;
+    margin-left: 800px;
+    margin-right: 20px;
   }
 }
 
@@ -602,7 +624,7 @@ html {
   font-weight: 700;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
   .hero__breakline::after {
     content: '\a';
     white-space: pre;
