@@ -7,9 +7,35 @@
 }
 
 .navigation__list {
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 1439px) {
         display: none;
     }
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        // width: 100%;
+        padding: 20px 0;
+        margin-left: 80px;
+    }
+}
+
+.navigation__item {
+    @media screen and (min-width: $desktop) {
+        font-family: 'Libre Baskerville';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.1;
+        letter-spacing: 0.055em;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+}
+
+.navigation__link {
+    color: $navigationItemColor;
 }
 
 .header {
@@ -25,6 +51,10 @@
     padding: 10px;
     background-color: transparent;
     border: none;
+
+    @media screen and (min-width: $desktop) {
+        display: none;
+    }
 }
 
 .footer {

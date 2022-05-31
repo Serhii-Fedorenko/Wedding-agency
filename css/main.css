@@ -294,10 +294,38 @@ html {
   padding-right: 40px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1439px) {
   .navigation__list {
     display: none;
   }
+}
+
+@media screen and (min-width: 1440px) {
+  .navigation__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px 0;
+    margin-left: 80px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .navigation__item {
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.1;
+    letter-spacing: 0.055em;
+  }
+  .navigation__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.navigation__link {
+  color: #0D0A09;
 }
 
 .header {
@@ -315,6 +343,12 @@ html {
   padding: 10px;
   background-color: transparent;
   border: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .mobile-button {
+    display: none;
+  }
 }
 
 .footer {
