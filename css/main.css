@@ -332,6 +332,14 @@ html {
   color: #D59D40;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__title {
+    text-align: center;
+    font-family: 'Libre Baskerville';
+    font-size: 25px;
+  }
+}
+
 .footer__item {
   -ms-flex-preferred-size: calc((100% - 10px) / 2);
       flex-basis: calc((100% - 10px) / 2);
@@ -342,6 +350,12 @@ html {
   font-size: 10px;
   line-height: 1.4;
   color: #D59D40;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__item {
+    font-size: 20px;
+  }
 }
 
 .footer__list {
@@ -363,6 +377,13 @@ html {
   font-size: 8px;
   line-height: 1.2;
   color: #bebebe;
+}
+
+@media screen and (min-width: 768px) {
+  .author {
+    width: 60%;
+    font-size: 20px;
+  }
 }
 
 .hero {

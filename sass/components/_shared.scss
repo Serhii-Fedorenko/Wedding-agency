@@ -42,6 +42,12 @@
     letter-spacing: 0.015em;
 
     color: $accentColor;
+
+    @media screen and (min-width: $tablet) {
+        text-align: center;
+        font-family: 'Libre Baskerville';
+        font-size: 25px;
+    }
 }
 
 .footer__item {
@@ -53,9 +59,11 @@
     font-size: 10px;
     line-height: 1.4;
 
-    // letter-spacing: 0.015em;
-
     color: $accentColor;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 20px;
+    }
 }
 
 .footer__list {
@@ -75,4 +83,9 @@
     line-height: 1.2;
 
     color: #bebebe;
+
+    @media screen and (min-width: $tablet) {
+        width: 60%;
+        font-size: 20px;
+    }
 }
