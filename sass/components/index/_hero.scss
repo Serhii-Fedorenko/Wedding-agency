@@ -115,7 +115,22 @@
             width: 2px;
             height: 100%;
             background-color: $accentColor;
+
+            @media screen and (min-width: $desktop) {
+                left: 350px;
+            }
         }
+
+        @media screen and (min-width: $desktop) {
+            text-align: right;
+        }
+    }
+
+    @media screen and (min-width: $desktop) {
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 50%;
     }
 }
 
@@ -159,6 +174,10 @@
     @media screen and (min-width: $tablet) {
         font-size: 21px;
     }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 18px;
+    }
 }
 
 .hero__hidden-text {
@@ -178,4 +197,8 @@
 
 .hero__title--position {
     text-align: right;
+}
+
+.hero__desktop-positioned {
+    position: relative;
 }

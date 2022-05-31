@@ -569,6 +569,27 @@ html {
   }
 }
 
+@media screen and (min-width: 768px) and (min-width: 1440px) {
+  .hero__list::after {
+    left: 350px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1440px) {
+  .hero__list {
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero__list {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+  }
+}
+
 .hero__submenu {
   position: absolute;
   top: 600px;
@@ -616,6 +637,12 @@ html {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .hero__link {
+    font-size: 18px;
+  }
+}
+
 .hero__hidden-text {
   display: none;
 }
@@ -633,6 +660,10 @@ html {
 
 .hero__title--position {
   text-align: right;
+}
+
+.hero__desktop-positioned {
+  position: relative;
 }
 
 .portfolio {
