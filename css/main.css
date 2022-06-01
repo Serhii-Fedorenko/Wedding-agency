@@ -732,11 +732,25 @@ html {
   }
 }
 
-.testimonials {
-  background-image: url("../../../images/Union.svg"), url("../../../images/Vector.svg");
-  background-repeat: no-repeat;
-  background-size: 135px auto;
-  background-position: 550px 220px, 50px 500px;
+@media screen and (min-width: 768px) {
+  .testimonials {
+    background-image: url("../../../images/Union.svg"), url("../../../images/Vector.svg");
+    background-repeat: no-repeat;
+    background-size: 135px auto;
+    background-position: 550px 220px, 50px 500px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .testimonials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
 }
 
 .testimonials__title {
@@ -846,6 +860,14 @@ html {
   display: none;
 }
 
+@media screen and (min-width: 1440px) {
+  .testimonials__story-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .testimonials__story-block--test {
     display: block;
@@ -885,6 +907,12 @@ html {
   font-size: 18px;
   line-height: 1.1;
   letter-spacing: 0.06em;
+}
+
+@media screen and (min-width: 1440px) {
+  .testimonials__story {
+    padding: 0;
+  }
 }
 
 .pack {

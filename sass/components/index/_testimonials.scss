@@ -1,8 +1,16 @@
 .testimonials {
-    background-image: url('../../../images/Union.svg'), url('../../../images/Vector.svg');
-    background-repeat: no-repeat;
-    background-size: 135px auto;
-    background-position: 550px 220px, 50px 500px;
+    @media screen and (min-width: $tablet) {
+        background-image: url('../../../images/Union.svg'),
+            url('../../../images/Vector.svg');
+        background-repeat: no-repeat;
+        background-size: 135px auto;
+        background-position: 550px 220px, 50px 500px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        flex-direction: row-reverse;
+    }
 }
 
 .testimonials__title {
@@ -101,12 +109,20 @@
 
 .testimonials__story-block {
     display: none;
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+    }
 }
 
 .testimonials__story-block--test {
     @media screen and (min-width: $tablet) {
         display: block;
     }
+
+    // @media screen and (min-width: $desktop) {
+    //     display: flex;
+    // }
 }
 
 .testimonials__subtitle {
@@ -145,4 +161,8 @@
     line-height: 1.1;
 
     letter-spacing: 0.06em;
+
+    @media screen and (min-width: $desktop) {
+        padding: 0;
+    }
 }
