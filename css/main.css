@@ -750,6 +750,7 @@ html {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
+    padding: 40px 40px;
   }
 }
 
@@ -767,6 +768,13 @@ html {
 @media screen and (min-width: 768px) {
   .testimonials__title {
     font-size: 35px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .testimonials__title {
+    margin-top: 22px;
+    font-size: 25px;
   }
 }
 
@@ -788,6 +796,12 @@ html {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .testiomonials__span {
+    font-size: 22px;
+  }
+}
+
 .testimonials__box {
   position: relative;
 }
@@ -800,6 +814,12 @@ html {
   background-color: #D59D40;
 }
 
+@media screen and (min-width: 1440px) {
+  .testimonials__box::before {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .testimonials__box::after {
     content: '';
@@ -810,6 +830,20 @@ html {
     display: block;
     width: 80%;
     height: 90%;
+    background-color: #F0F0F0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .testimonials__box::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 8%;
+    left: 10%;
+    display: block;
+    width: 80%;
+    height: 80%;
     background-color: #F0F0F0;
   }
 }
@@ -862,9 +896,8 @@ html {
 
 @media screen and (min-width: 1440px) {
   .testimonials__story-block {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
+    padding: 0 20px;
   }
 }
 
@@ -899,6 +932,18 @@ html {
   letter-spacing: 0.06em;
 }
 
+@media screen and (min-width: 1440px) {
+  .testimonials__subtitle__addition {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .testimonials__subtitle {
+    font-size: 20px;
+  }
+}
+
 .testimonials__story {
   padding: 0 160px 90px;
   font-family: 'Libre Baskerville';
@@ -911,7 +956,8 @@ html {
 
 @media screen and (min-width: 1440px) {
   .testimonials__story {
-    padding: 0;
+    padding: 0 25px;
+    font-size: 15px;
   }
 }
 

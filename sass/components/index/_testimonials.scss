@@ -10,6 +10,7 @@
     @media screen and (min-width: $desktop) {
         display: flex;
         flex-direction: row-reverse;
+        padding: 40px 40px;
     }
 }
 
@@ -25,6 +26,11 @@
 
     @media screen and (min-width: $tablet) {
         font-size: 35px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-top: 22px;
+        font-size: 25px;
     }
 }
 
@@ -42,6 +48,10 @@
     @media screen and (min-width: $tablet) {
         font-size: 25px;
     }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 22px;
+    }
 }
 
 .testimonials__box {
@@ -53,6 +63,10 @@
         width: 100%;
         height: 2px;
         background-color: $accentColor;
+
+        @media screen and (min-width: $desktop) {
+            display: none;
+        }
     }
 
     @media screen and (max-width: 767px) {
@@ -65,6 +79,20 @@
             display: block;
             width: 80%;
             height: 90%;
+            background-color: $bgc;
+        }
+    }
+
+    @media screen and (min-width: $desktop) {
+        &::after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            top: 8%;
+            left: 10%;
+            display: block;
+            width: 80%;
+            height: 80%;
             background-color: $bgc;
         }
     }
@@ -111,7 +139,8 @@
     display: none;
 
     @media screen and (min-width: $desktop) {
-        display: flex;
+        display: block;
+        padding: 0 20px;
     }
 }
 
@@ -119,10 +148,6 @@
     @media screen and (min-width: $tablet) {
         display: block;
     }
-
-    // @media screen and (min-width: $desktop) {
-    //     display: flex;
-    // }
 }
 
 .testimonials__subtitle {
@@ -149,6 +174,14 @@
         line-height: 1;
 
         letter-spacing: 0.06em;
+
+        @media screen and (min-width: $desktop) {
+            font-size: 16px;
+        }
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 20px;
     }
 }
 
@@ -163,6 +196,7 @@
     letter-spacing: 0.06em;
 
     @media screen and (min-width: $desktop) {
-        padding: 0;
+        padding: 0 25px;
+        font-size: 15px;
     }
 }
