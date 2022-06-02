@@ -1015,6 +1015,14 @@ html {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .pack {
+    height: 500px;
+    background-image: url("../../../images/Rectangle 112-min.png");
+    background-size: 100% 100%;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .pack__text__box {
     position: relative;
@@ -1030,6 +1038,13 @@ html {
     width: 50%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .pack__text__box {
+    margin-right: auto;
+    height: 70%;
   }
 }
 
@@ -1049,6 +1064,13 @@ html {
   .pack__title {
     font-size: 80px;
     color: #000000;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .pack__title {
+    font-size: 100px;
+    color: #ffffff;
   }
 }
 
@@ -1086,9 +1108,22 @@ html {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .pack__subtitle::after {
+    width: 80%;
+    left: 10%;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .pack__subtitle {
     font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .pack__subtitle {
+    font-size: 25px;
   }
 }
 
@@ -1109,6 +1144,14 @@ html {
 @media screen and (min-width: 768px) {
   .pack__call {
     font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .pack__call {
+    font-size: 22px;
+    width: 70%;
+    margin-left: 120px;
   }
 }
 
