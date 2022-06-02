@@ -1020,6 +1020,7 @@ html {
     height: 500px;
     background-image: url("../../../images/Rectangle 112-min.png");
     background-size: 100% 100%;
+    background-position: 0 0;
   }
 }
 
@@ -1045,6 +1046,7 @@ html {
   .pack__text__box {
     margin-right: auto;
     height: 70%;
+    padding: 0 50px;
   }
 }
 
@@ -1110,8 +1112,8 @@ html {
 
 @media screen and (min-width: 1440px) {
   .pack__subtitle::after {
-    width: 80%;
-    left: 10%;
+    width: 60%;
+    left: 20%;
   }
 }
 
@@ -1151,7 +1153,7 @@ html {
   .pack__call {
     font-size: 22px;
     width: 70%;
-    margin-left: 120px;
+    margin-left: 130px;
   }
 }
 
@@ -1179,6 +1181,14 @@ html {
     width: 280px;
     height: 60px;
     font-size: 35px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .pack__button {
+    position: absolute;
+    bottom: 20px;
+    left: 340px;
   }
 }
 
