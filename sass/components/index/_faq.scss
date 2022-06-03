@@ -11,18 +11,18 @@
     }
 
     @media screen and (min-width: $desktop) {
-        // width: 30%;
-        // background-size: 450px auto;
         grid-column: 2/3;
         grid-row: 1/4;
+        background-position: -100px -190px;
     }
 }
 
 .faq__list {
 
     @media screen and (min-width: $desktop) {
+        padding: 50px 30px;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 600px 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
 }
@@ -52,7 +52,9 @@
     }
 
     @media screen and (min-width: $desktop) {
-        display: none;
+        font-size: 170px;
+        padding-left: 160px;
+        margin-top: 430px;
     }
 }
 
@@ -74,7 +76,8 @@
     }
 
     @media screen and (min-width: $desktop) {
-        display: none;
+        font-size: 25px;
+        padding-left: 180px;
     }
 }
 
@@ -98,6 +101,10 @@
     }
 
     @media screen and (min-width: $desktop) {
-        display: none;
+        font-style: italic;
+        font-size: 22px;
+        padding: 0 50px 0 200px;
+        margin: 0;
+
     }
 }
