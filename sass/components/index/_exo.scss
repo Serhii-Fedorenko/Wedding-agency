@@ -121,6 +121,11 @@
 
 .exo__list {
     text-align: center;
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        padding: 100px 40px;
+    }
 }
 
 .exo__subtitle {
@@ -133,6 +138,10 @@
 
     @media screen and (min-width: $tablet) {
         font-size: 25px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 32px;
     }
 }
 
@@ -150,6 +159,10 @@
     @media screen and (min-width: $tablet) {
         padding: 0 70px;
         font-size: 22px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 24px;
     }
 }
 
@@ -179,11 +192,16 @@
         height: 40px;
         font-size: 20px;
     }
+
+    @media screen and (min-width: $desktop) {
+        width: 300px;
+        height: 60px;
+        font-size: 22px;
+    }
 }
 
 .exo__item {
     position: relative;
-    // height: 280px;
 
     &::before {
         content: '';
@@ -205,6 +223,3 @@
     }
 }
 
-.exo__hide-span {
-    display: none;
-}
