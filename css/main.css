@@ -1192,7 +1192,7 @@ html {
   }
 }
 
-.faq__box {
+.faq__item--box {
   min-height: 740px;
   background-image: url("../../../images/DSC09112 1-min.png");
   background-size: 570px auto;
@@ -1201,14 +1201,38 @@ html {
 }
 
 @media screen and (min-width: 768px) {
-  .faq__box {
+  .faq__item--box {
     background-size: 770px auto;
     background-position: 0 -150px;
   }
 }
 
-.faq__list {
-  display: none;
+@media screen and (min-width: 1440px) {
+  .faq__item--box {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    grid-row: 1/4;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .faq__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .faq__item {
+    display: none;
+  }
 }
 
 .faq__title {
@@ -1232,6 +1256,12 @@ html {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .faq__title {
+    display: none;
+  }
+}
+
 .faq__subtitle {
   display: inline-block;
   margin-top: 0;
@@ -1248,6 +1278,12 @@ html {
   .faq__subtitle {
     padding-left: 310px;
     font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .faq__subtitle {
+    display: none;
   }
 }
 
@@ -1268,6 +1304,12 @@ html {
     padding-left: 350px;
     padding-right: 160px;
     font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .faq__text {
+    display: none;
   }
 }
 
