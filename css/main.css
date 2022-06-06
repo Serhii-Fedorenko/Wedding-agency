@@ -1863,7 +1863,7 @@ html {
 
 @media screen and (min-width: 1440px) {
   .cont__box {
-    height: 1140px;
+    height: 940px;
   }
 }
 
@@ -1944,6 +1944,15 @@ html {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .cont__text--desktop {
+    width: 670px;
+    padding-left: 80px;
+    padding-right: 40px;
+    font-size: 26px;
+  }
+}
+
 .cont__flexbox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1952,6 +1961,14 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 30px;
+}
+
+@media screen and (min-width: 1440px) {
+  .cont__flexbox {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: 70px;
+  }
 }
 
 .cont__list {
@@ -1984,6 +2001,12 @@ html {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .cont__list {
+    padding-left: 400px;
+  }
+}
+
 .cont__item {
   text-align: right;
   font-family: 'Roboto';
@@ -2011,6 +2034,12 @@ html {
     font-size: 22px;
     line-height: 1.1;
     color: #464646;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .cont__item {
+    font-size: 28px;
   }
 }
 
@@ -2080,6 +2109,15 @@ html {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .cont__button {
+    width: 300px;
+    height: 60px;
+    margin-left: 80px;
+    font-size: 25px;
+  }
+}
+
 .cont__item--icon {
   margin-left: 10px;
 }
@@ -2088,6 +2126,13 @@ html {
   .cont__item--icon {
     width: 30px;
     height: 30px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .cont__item--icon {
+    width: 50px;
+    height: 50px;
   }
 }
 /*# sourceMappingURL=main.css.map */
