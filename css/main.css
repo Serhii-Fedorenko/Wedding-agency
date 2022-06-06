@@ -1861,6 +1861,12 @@ html {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .cont__box {
+    height: 1140px;
+  }
+}
+
 .cont__title {
   display: inline-block;
   padding: 5px 15px;
@@ -1885,6 +1891,14 @@ html {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .cont__title {
+    margin-top: 740px;
+    margin-left: 350px;
+    font-size: 115px;
+  }
+}
+
 .cont__call {
   margin-top: -10px;
   margin-left: 165px;
@@ -1902,6 +1916,14 @@ html {
     margin-top: 0;
     margin-left: 365px;
     font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .cont__call {
+    margin-left: 630px;
+    margin-top: -25px;
+    font-size: 31px;
   }
 }
 

@@ -12,6 +12,10 @@
     @media screen and (min-width: $tablet) {
         height: 480px;
     }
+
+    @media screen and (min-width: $desktop) {
+        height: 1140px;
+    }
 }
 
 .cont__title {
@@ -36,6 +40,12 @@
         margin-left: 200px;
         font-size: 60px;
     }
+
+    @media screen and (min-width: $desktop) {
+        margin-top: 740px;
+        margin-left: 350px;
+        font-size: 115px;
+    }
 }
 
 .cont__call {
@@ -53,6 +63,12 @@
         margin-top: 0;
         margin-left: 365px;
         font-size: 16px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-left: 630px;
+        margin-top: -25px;
+        font-size: 31px;
     }
 }
 
