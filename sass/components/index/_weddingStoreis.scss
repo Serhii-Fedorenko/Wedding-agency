@@ -4,6 +4,10 @@
         margin-left: auto;
         margin-right: auto;
     }
+
+    @media screen and (min-width: $desktop) {
+        width: 100vw;
+    }
 }
 
 .wedding-stories__title {

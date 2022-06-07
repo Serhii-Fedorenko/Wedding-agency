@@ -1421,6 +1421,12 @@ html {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .wedding-stories {
+    width: 100vw;
+  }
+}
+
 .wedding-stories__title {
   margin-bottom: 0;
   text-align: center;
