@@ -1,6 +1,11 @@
 .testimonials {
+
+    @media screen and (min-width: $mobile) {
+        width: $mobile;
+    }
     position: relative;
     @media screen and (min-width: $tablet) {
+        width: $tablet;
         background-image: url('../../../images/Union.svg'),
             url('../../../images/Vector.svg');
         background-repeat: no-repeat;
@@ -9,6 +14,7 @@
     }
 
     @media screen and (min-width: $desktop) {
+        width: $desktop;
         display: flex;
         flex-direction: row-reverse;
         padding: 100px 40px;
