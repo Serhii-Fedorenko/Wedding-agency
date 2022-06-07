@@ -2223,4 +2223,151 @@ html {
     height: 50px;
   }
 }
+
+.packages__header__img {
+  width: 375px;
+  height: 250px;
+  background-image: url("../../../images/Rectangle 70-min.jpg");
+  background-size: 100% 100%;
+}
+
+.mobile-button {
+  margin-left: 270px;
+}
+
+.package__title {
+  margin-bottom: 0;
+  font-family: 'Sail';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 75px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: #464646;
+}
+
+.package__subtitle {
+  margin-top: -8px;
+  margin-left: 60px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  color: #D59D40;
+}
+
+.package__head-text {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+.package__item {
+  display: none;
+}
+
+.package__item--mobile {
+  display: block;
+}
+
+.package__item__subtitle {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: -0.05em;
+  color: #464646;
+}
+
+.package__item__subtitle--accent {
+  color: #D59D40;
+}
+
+.package__item__text {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: #464646;
+}
+
+.package__item__price--old {
+  font-family: 'Sail';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 1;
+  text-align: center;
+  color: #BEBEBE;
+}
+
+.package__item__price--new {
+  font-family: 'Sail';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 1;
+  letter-spacing: -0.025em;
+  text-align: center;
+  color: #D59D40;
+}
+
+.package__item__price--clarification {
+  color: #BEBEBE;
+}
+
+.clarification__call {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.3;
+  letter-spacing: -0.015em;
+  color: #D59D40;
+}
+
+.clarification__text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.1;
+  letter-spacing: -0.07em;
+  color: #464646;
+}
+
+.package__costomize-text {
+  font-family: 'Libre Baskerville';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.package__costomize-button {
+  margin-left: auto;
+  margin-right: auto;
+  width: 246px;
+  height: 47px;
+  text-align: center;
+  background-color: #D59D40;
+  border-radius: 5px;
+  border-color: transparent;
+  color: #ffffff;
+  -webkit-box-shadow: -10px 0px 16px rgba(0, 0, 0, 0.2);
+          box-shadow: -10px 0px 16px rgba(0, 0, 0, 0.2);
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.5;
+}
 /*# sourceMappingURL=main.css.map */

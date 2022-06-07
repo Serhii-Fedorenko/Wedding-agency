@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="header__img"></div>
+    <div class="packages__header__img"></div>
     <header class="header container">
         <nav class="navigation">
             <ul class="navigation__list">
@@ -26,15 +26,19 @@
                 <li class="navigation__item"><a href="" class="navigation__link">ABOUT</a></li>
                 <li class="navigation__item"><a href="./contact.html" class="navigation__link">CONTACT</a></li>
             </ul>
-            <button class="mobile-button">burger menu</button>
+            <button class="mobile-button">
+                <svg width="30" height="8">
+                    <use href="./images/symbol-defs.svg#icon-burger"></use>
+                </svg>
+            </button>
         </nav>
     </header>
 
     <section class="package container">
         <h2 class="package__title">Packages</h2>
         <p class="package__subtitle">PHOTO+VIDEO</p>
-        <p class="packege__head-text">Choose one of our premade packages or build your own. Slide to view photo-only and
-            video-only packages.
+        <p class="package__head-text">Choose one of our premade packages or build your own. Slide to view <b>photo-only</b> and
+            <b>video-only</b> packages.
         </p>
         <ul class="package__list">
             <li class="package__item">
@@ -106,8 +110,8 @@
                 <p class="package__item__price--old">$9,000</p>
                 <p class="package__item__price--new">$7,200*</p>
             </li>
-            <li class="package__item">
-                <h3 class="package__item__subtitle">EPIC+</h3>
+            <li class="package__item package__item--mobile">
+                <h3 class="package__item__subtitle">EPIC<span class="package__item__subtitle--accent">+</span></h3>
                 <p class="package__item__text">
                     15 hours <br>
                     Photography solo <br>
@@ -127,17 +131,10 @@
                     Thank You cards <br>
                 </p>
                 <p class="package__item__price--old">$12,000</p>
-                <p class="package__item__price--new">$9,600*</p>
+                <p class="package__item__price--new">$9,600<span class="package__item__price--clarification">*</span></p>
             </li>
         </ul>
-
-        <p class="package__costomize-text">
-            Taxes and travel fees are not included.
-            Package splitting fee- $600/day.
-        </p>
-        <button class="package__costomize-button">CUSTOMIZE</button>
-        <button class="package__costomize-button">CONTACT</button>
-
+        
         <div class="clarification">
             <p class="clarification__call">
                 END OF BOOKING SEASON SPECIAL!
@@ -146,6 +143,13 @@
                 Valid for 2019-2021 weddings. Offer ends June9,2019.Non transferable.
             </p>
         </div>
+        <p class="package__costomize-text">
+            Taxes and travel fees are not included.
+            Package splitting fee- $600/day.
+        </p>
+        <button class="package__costomize-button">CUSTOMIZE</button>
+        <button class="package__costomize-button">CONTACT</button>
+
     </section>
 
     <section class="alacart container">
