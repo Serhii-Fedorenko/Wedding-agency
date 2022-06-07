@@ -352,8 +352,22 @@ html {
 }
 
 .footer {
-  padding: 20px 0;
+  padding: 20px 40px;
   background-color: #F9F4EC;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 20px 60px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .footer__title {
@@ -371,6 +385,13 @@ html {
     text-align: center;
     font-family: 'Libre Baskerville';
     font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer__title {
+    text-align: left;
+    font-size: 30px;
   }
 }
 
@@ -417,6 +438,13 @@ html {
   .author {
     width: 60%;
     font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .author {
+    width: 100%;
+    text-align: center;
   }
 }
 
