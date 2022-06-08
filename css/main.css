@@ -2401,5 +2401,39 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.alacart__title {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 1.5;
+  letter-spacing: -0.08em;
+  color: #464646;
+}
+
+.alacart__subtitle {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 1.1;
+  color: #464646;
+}
+
+.alacart__price {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 1.1;
+  color: #464646;
 }
 /*# sourceMappingURL=main.css.map */

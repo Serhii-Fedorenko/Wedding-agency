@@ -185,4 +185,37 @@
 
 .alacart__item {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.alacart__title {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 1.5;
+    letter-spacing: -0.08em;
+
+    color: $titleColor;
+}
+
+.alacart__subtitle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 1.1;
+
+    color: $titleColor;
+}
+
+.alacart__price {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 1.1;
+
+    color: $titleColor;
 }
