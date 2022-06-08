@@ -2370,4 +2370,36 @@ html {
   font-size: 26px;
   line-height: 1.5;
 }
+
+.package__alacart__title {
+  margin-bottom: 0;
+  font-family: 'Sail';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 65px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: #464646;
+}
+
+.package__alacart__subtitle {
+  margin-top: 0;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  text-align: center;
+  color: #D59D40;
+}
+
+.alacart__text {
+  display: none;
+}
+
+.alacart__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 /*# sourceMappingURL=main.css.map */
