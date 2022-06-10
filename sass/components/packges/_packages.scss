@@ -34,11 +34,16 @@
 }
 
 .package__head-text {
+    width: 70%;
     font-family: 'Libre Baskerville';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 1.3;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 65px;
 }
 
 .package__item {
@@ -59,13 +64,21 @@
     letter-spacing: -0.05em;
 
     color: $titleColor;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: $accentColor;
+    }
 }
 
 .package__item__subtitle--accent {
     color: $accentColor;
 }
 
-.package__item__text {
+.package__item__collection {
     font-family: 'Libre Baskerville';
     font-style: normal;
     font-weight: 400;
@@ -74,9 +87,14 @@
     text-align: center;
 
     color: $titleColor;
+
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
 }
 
 .package__item__price--old {
+    position: relative;
     font-family: 'Sail';
     font-style: normal;
     font-weight: 400;
@@ -85,9 +103,23 @@
     text-align: center;
 
     color: $oldPriceColor;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 35%;
+        left: 20%;
+        width: 60%;
+        height: 2px;
+        background-color: $accentColor;
+        transform: rotate(-10deg);
+
+    }
 }
 
 .package__item__price--new {
+    margin-top: 0; 
     font-family: 'Sail';
     font-style: normal;
     font-weight: 400;
@@ -111,6 +143,7 @@
         font-size: 15px;
         line-height: 1.3;
         letter-spacing: -0.015em;
+        text-align: center;
 
         color: $accentColor;
     }
