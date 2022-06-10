@@ -146,6 +146,7 @@
         top: -5%;
         left: -5%;
         background-color: #fff;
+        color: $oldPriceColor;
         padding: 10px;
     }
     
@@ -167,7 +168,7 @@
     &__text {
         display: inline-block;
         padding: 50px 10px 20px 10px;
-        border: 1px solid $titleColor;
+        border: 1px solid $oldPriceColor;
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
@@ -249,6 +250,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    &:not(:last-child) {
+        margin-bottom: 15px;
+    }
 }
 
 .alacart__title {
@@ -263,16 +268,18 @@
 }
 
 .alacart__subtitle {
+    margin: 0;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 800;
     font-size: 15px;
-    line-height: 1.1;
+    line-height: 1;
 
     color: $titleColor;
 }
 
 .alacart__price {
+    margin: 0;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;

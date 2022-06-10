@@ -2367,6 +2367,7 @@ html {
   top: -5%;
   left: -5%;
   background-color: #fff;
+  color: #BEBEBE;
   padding: 10px;
 }
 
@@ -2387,7 +2388,7 @@ html {
 .clarification__text {
   display: inline-block;
   padding: 50px 10px 20px 10px;
-  border: 1px solid #464646;
+  border: 1px solid #BEBEBE;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -2473,6 +2474,10 @@ html {
           justify-content: space-between;
 }
 
+.alacart__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
 .alacart__title {
   font-family: 'Roboto';
   font-style: italic;
@@ -2484,15 +2489,17 @@ html {
 }
 
 .alacart__subtitle {
+  margin: 0;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 800;
   font-size: 15px;
-  line-height: 1.1;
+  line-height: 1;
   color: #464646;
 }
 
 .alacart__price {
+  margin: 0;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
