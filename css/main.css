@@ -2225,14 +2225,66 @@ html {
 }
 
 .packages__header__img {
-  width: 375px;
   height: 250px;
   background-image: url("../../../images/Rectangle 70-min.jpg");
   background-size: 100% 100%;
 }
 
-.mobile-button {
+@media screen and (min-width: 768px) {
+  .packages__header__img {
+    height: 520px;
+  }
+}
+
+.packages__header__title {
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .packages__header__title {
+    display: inline-block;
+    margin-top: 380px;
+    margin-bottom: -10px;
+    margin-left: 240px;
+    font-family: 'Sail';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 1;
+    color: #ffffff;
+  }
+}
+
+.packages__header__subtitle {
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .packages__header__subtitle {
+    display: block;
+    margin-top: 0;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #D59D40;
+  }
+}
+
+.packages__mobile-button {
+  display: inline-block;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
   margin-left: 270px;
+}
+
+@media screen and (min-width: 768px) {
+  .packages__mobile-button {
+    margin-left: 650px;
+  }
 }
 
 .package__title {
@@ -2246,6 +2298,12 @@ html {
   color: #464646;
 }
 
+@media screen and (min-width: 768px) {
+  .package__title {
+    display: none;
+  }
+}
+
 .package__subtitle {
   margin-top: -8px;
   margin-left: 60px;
@@ -2255,6 +2313,12 @@ html {
   font-size: 20px;
   line-height: 1;
   color: #D59D40;
+}
+
+@media screen and (min-width: 768px) {
+  .package__subtitle {
+    display: none;
+  }
 }
 
 .package__head-text {
@@ -2268,6 +2332,14 @@ html {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 65px;
+}
+
+@media screen and (min-width: 768px) {
+  .package__head-text {
+    margin-top: 50px;
+    width: 80%;
+    font-size: 26px;
+  }
 }
 
 .package__item {
