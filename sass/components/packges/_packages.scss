@@ -114,12 +114,11 @@
         height: 2px;
         background-color: $accentColor;
         transform: rotate(-10deg);
-
     }
 }
 
 .package__item__price--new {
-    margin-top: 0; 
+    margin-top: 0;
     font-family: 'Sail';
     font-style: normal;
     font-weight: 400;
@@ -142,14 +141,19 @@
     &::before {
         content: '*';
         display: block;
+        width: 40px;
+        height: 40px;
         position: absolute;
         top: -5%;
         left: -5%;
         background-color: #fff;
         color: $oldPriceColor;
         padding: 10px;
+        font-family: 'Sail';
+        font-size: 40px;
+        line-height: 1;
     }
-    
+
     &__call {
         position: absolute;
         top: 30px;
@@ -244,6 +248,25 @@
 
 .alacart__text {
     display: none;
+}
+
+.alacart__list {
+    padding-bottom: 40px;
+}
+
+.alacart__box {
+    position: relative;
+
+    &::after {
+        content:'';
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: $accentColor;
+    }
 }
 
 .alacart__item {
