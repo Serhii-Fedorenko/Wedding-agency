@@ -2350,6 +2350,30 @@ html {
   display: block;
 }
 
+@media screen and (min-width: 768px) {
+  .package__item--mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .package__item__tablet {
+    display: block;
+  }
+  .package__item__tablet:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+.package__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .package__item__subtitle {
   font-family: 'Roboto';
   font-style: normal;
@@ -2361,12 +2385,14 @@ html {
   color: #464646;
 }
 
-.package__item__subtitle::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: #D59D40;
+@media screen and (max-width: 767px) {
+  .package__item__subtitle::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #D59D40;
+  }
 }
 
 .package__item__subtitle--accent {

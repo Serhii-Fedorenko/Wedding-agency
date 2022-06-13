@@ -113,6 +113,25 @@
 
 .package__item--mobile {
     display: block;
+
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }
+}
+
+.package__item__tablet {
+    @media screen and (min-width: $tablet) {
+        display: block;
+
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+    }
+}
+
+.package__list {
+    display: flex;
+    justify-content: center;
 }
 
 .package__item__subtitle {
@@ -126,12 +145,14 @@
 
     color: $titleColor;
 
-    &::after {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 2px;
-        background-color: $accentColor;
+    @media screen and (max-width: 767px) {
+        &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: $accentColor;
+        }
     }
 }
 
