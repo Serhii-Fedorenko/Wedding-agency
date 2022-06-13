@@ -2395,6 +2395,16 @@ html {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .package__item__subtitle {
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.1;
+  }
+}
+
 .package__item__subtitle--accent {
   color: #D59D40;
 }
@@ -2411,6 +2421,12 @@ html {
 
 .package__item__collection:not(:last-child) {
   margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .package__item__collection {
+    font-size: 22px;
+  }
 }
 
 .package__item__price--old {
@@ -2437,6 +2453,12 @@ html {
           transform: rotate(-10deg);
 }
 
+@media screen and (min-width: 768px) {
+  .package__item__price--old {
+    font-size: 40px;
+  }
+}
+
 .package__item__price--new {
   margin-top: 0;
   font-family: 'Sail';
@@ -2447,6 +2469,12 @@ html {
   letter-spacing: -0.025em;
   text-align: center;
   color: #D59D40;
+}
+
+@media screen and (min-width: 768px) {
+  .package__item__price--new {
+    font-size: 60px;
+  }
 }
 
 .package__item__price--clarification {
@@ -2537,6 +2565,41 @@ html {
 
 .package__costomize__button-box {
   text-align: center;
+}
+
+.package__item:nth-child(2) {
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .package__item:nth-child(2)::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 3px;
+    height: 100%;
+    background-color: #D59D40;
+  }
+}
+
+.package__item:nth-child(3) .package__item__subtitle {
+  position: relative;
+}
+
+.package__item:nth-child(3) .package__item__subtitle::before {
+  content: 'Bestseller';
+  position: absolute;
+  top: -80%;
+  left: 34%;
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  color: #D59D40;
 }
 
 .package__alacart__title {
