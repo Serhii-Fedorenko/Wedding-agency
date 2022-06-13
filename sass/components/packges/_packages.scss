@@ -240,6 +240,10 @@
     position: relative;
     margin-bottom: 58px;
 
+    @media screen and (min-width: $tablet) {
+        margin-left: 60px;
+    }
+
     &::before {
         content: '*';
         display: block;
@@ -254,6 +258,13 @@
         font-family: 'Sail';
         font-size: 40px;
         line-height: 1;
+
+        @media screen and (min-width: $tablet) {
+            font-size: 60px;
+            top: -30%;
+            left: -10%;
+            padding: 60px;
+        }
     }
 
     &__call {
@@ -269,6 +280,13 @@
         letter-spacing: -0.015em;
 
         color: $accentColor;
+
+        @media screen and (min-width: $tablet) {
+            top: 60px;
+            left: 20px;
+            font-size: 33px;
+            letter-spacing: 0.04em;
+        }
     }
 
     &__text {
@@ -284,6 +302,12 @@
         text-align: left;
 
         color: $titleColor;
+
+        @media screen and (min-width: $tablet) {
+            padding: 100px 80px 40px 20px;
+            border: 2px solid $oldPriceColor;
+            font-size: 17px;
+        }
     }
 }
 
@@ -295,6 +319,14 @@
     font-size: 17px;
     line-height: 1.1;
     text-align: center;
+
+    @media screen and (min-width: $tablet) {
+        width: 70%;
+        font-size: 24px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .package__costomize-button {
@@ -317,11 +349,26 @@
 
     &:not(:last-child) {
         margin-bottom: 38px;
+
+        @media screen and (min-width: $tablet) {
+            margin-bottom: 0;
+        }
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: 300px;
+        height: 60px;
+        font-size: 35px;
     }
 }
 
 .package__costomize__button-box {
     text-align: center;
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .package__item:nth-child(2) {
