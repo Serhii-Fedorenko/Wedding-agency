@@ -408,6 +408,7 @@
 }
 
 .package__alacart__title {
+    position: relative;
     margin-bottom: 0;
     font-family: 'Sail';
     font-style: normal;
@@ -417,6 +418,24 @@
     letter-spacing: -0.04em;
 
     color: $titleColor;
+
+    &::before {
+        content: ',';
+        position: absolute;
+        top: -50%;
+        left: 15%;
+        transform: rotate(-90deg);
+        color: $accentColor;
+
+        @media screen and (min-width: $tablet) {
+            left: 32%;
+        }
+    }
+
+    @media screen and (min-width: $tablet) {
+        text-align: center;
+        font-size: 80px;
+    }
 }
 
 .package__alacart__subtitle {
@@ -429,6 +448,10 @@
     text-align: center;
 
     color: $accentColor;
+
+    @media screen and (min-width: $tablet) {
+        margin-top: 10px;
+    }
 }
 
 .alacart__text {

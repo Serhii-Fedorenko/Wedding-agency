@@ -2670,6 +2670,7 @@ html {
 }
 
 .package__alacart__title {
+  position: relative;
   margin-bottom: 0;
   font-family: 'Sail';
   font-style: normal;
@@ -2678,6 +2679,29 @@ html {
   line-height: 1;
   letter-spacing: -0.04em;
   color: #464646;
+}
+
+.package__alacart__title::before {
+  content: ',';
+  position: absolute;
+  top: -50%;
+  left: 15%;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  color: #D59D40;
+}
+
+@media screen and (min-width: 768px) {
+  .package__alacart__title::before {
+    left: 32%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .package__alacart__title {
+    text-align: center;
+    font-size: 80px;
+  }
 }
 
 .package__alacart__subtitle {
@@ -2689,6 +2713,12 @@ html {
   line-height: 1;
   text-align: center;
   color: #D59D40;
+}
+
+@media screen and (min-width: 768px) {
+  .package__alacart__subtitle {
+    margin-top: 10px;
+  }
 }
 
 .alacart__text {
