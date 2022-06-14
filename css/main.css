@@ -294,6 +294,13 @@ html {
   padding-right: 40px;
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
 @media screen and (max-width: 1439px) {
   .navigation__list {
     display: none;
@@ -2486,12 +2493,6 @@ html {
   margin-bottom: 58px;
 }
 
-@media screen and (min-width: 768px) {
-  .clarification {
-    margin-left: 60px;
-  }
-}
-
 .clarification::before {
   content: '*';
   display: block;
@@ -2770,6 +2771,12 @@ html {
   color: #464646;
 }
 
+@media screen and (min-width: 768px) {
+  .alacart__title {
+    font-size: 28px;
+  }
+}
+
 .alacart__subtitle {
   margin: 0;
   font-family: 'Roboto';
@@ -2780,6 +2787,12 @@ html {
   color: #464646;
 }
 
+@media screen and (min-width: 768px) {
+  .alacart__subtitle {
+    font-size: 22px;
+  }
+}
+
 .alacart__price {
   margin: 0;
   font-family: 'Roboto';
@@ -2788,5 +2801,11 @@ html {
   font-size: 23px;
   line-height: 1.1;
   color: #464646;
+}
+
+@media screen and (min-width: 768px) {
+  .alacart__price {
+    font-size: 35px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

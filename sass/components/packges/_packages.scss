@@ -240,10 +240,6 @@
     position: relative;
     margin-bottom: 58px;
 
-    @media screen and (min-width: $tablet) {
-        margin-left: 60px;
-    }
-
     &::before {
         content: '*';
         display: block;
@@ -496,6 +492,10 @@
     letter-spacing: -0.08em;
 
     color: $titleColor;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 28px;
+    }
 }
 
 .alacart__subtitle {
@@ -507,6 +507,10 @@
     line-height: 1;
 
     color: $titleColor;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 22px;
+    }
 }
 
 .alacart__price {
@@ -518,4 +522,8 @@
     line-height: 1.1;
 
     color: $titleColor;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 35px;
+    }
 }
