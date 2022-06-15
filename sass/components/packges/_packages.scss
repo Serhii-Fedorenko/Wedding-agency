@@ -6,6 +6,14 @@
     @media screen and (min-width: $tablet) {
         height: 520px;
     }
+
+    @media screen and (min-width: $desktop) {
+        width: 100vw;
+        height: 470px;
+        background-image: url('../../../images/MAIN_PIC-min.jpg');
+        background-size: cover;
+        // background-repeat: no-repeat;
+    }
 }
 
 .packages__header__title {
@@ -54,6 +62,10 @@
     @media screen and (min-width: $tablet) {
         margin-left: 650px;
     }
+
+    @media screen and (min-width: $desktop) {
+        display: none;
+    }
 }
 
 .package__title {
@@ -67,8 +79,13 @@
 
     color: $titleColor;
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $tablet) and (max-width: 1439px) {
         display: none;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 170px;
+        text-align: center;
     }
 }
 
@@ -83,8 +100,13 @@
 
     color: $accentColor;
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $tablet) and (max-width: 1439px) {
         display: none;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 41px;
+        margin-left: 500px;
     }
 }
 
@@ -104,6 +126,11 @@
         margin-top: 50px;
         width: 80%;
         font-size: 26px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 33px;
+        width: 75%;
     }
 }
 

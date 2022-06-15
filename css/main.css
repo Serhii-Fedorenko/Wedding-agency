@@ -2243,6 +2243,15 @@ html {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .packages__header__img {
+    width: 100vw;
+    height: 470px;
+    background-image: url("../../../images/MAIN_PIC-min.jpg");
+    background-size: cover;
+  }
+}
+
 .packages__header__title {
   display: none;
 }
@@ -2294,6 +2303,12 @@ html {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .packages__mobile-button {
+    display: none;
+  }
+}
+
 .package__title {
   margin-bottom: 0;
   font-family: 'Sail';
@@ -2305,9 +2320,16 @@ html {
   color: #464646;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
   .package__title {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .package__title {
+    font-size: 170px;
+    text-align: center;
   }
 }
 
@@ -2322,9 +2344,16 @@ html {
   color: #D59D40;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
   .package__subtitle {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .package__subtitle {
+    font-size: 41px;
+    margin-left: 500px;
   }
 }
 
@@ -2346,6 +2375,13 @@ html {
     margin-top: 50px;
     width: 80%;
     font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .package__head-text {
+    font-size: 33px;
+    width: 75%;
   }
 }
 
