@@ -2868,7 +2868,13 @@ html {
 }
 
 .alacart__text {
-  display: none;
+  width: 60%;
+}
+
+@media screen and (max-width: 1439px) {
+  .alacart__text {
+    display: none;
+  }
 }
 
 .alacart__list {
@@ -2883,6 +2889,8 @@ html {
         grid-template-columns: 1fr 1fr;
     grid-row-gap: 30px;
     grid-column-gap: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
 
@@ -2970,6 +2978,13 @@ html {
 @media screen and (min-width: 768px) {
   .alacart__price {
     font-size: 35px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .alacart__price {
+    margin-right: 80px;
+    margin-bottom: auto;
   }
 }
 /*# sourceMappingURL=main.css.map */
