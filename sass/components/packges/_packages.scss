@@ -12,7 +12,6 @@
         height: 470px;
         background-image: url('../../../images/MAIN_PIC-min.jpg');
         background-size: cover;
-        // background-repeat: no-repeat;
     }
 }
 
@@ -568,7 +567,7 @@
 }
 
 .alacart__text {
-    width: 60%;
+    width: 80%;
 
     @media screen and (max-width: 1439px) {
         display: none;
@@ -582,33 +581,61 @@
 .alacart__container {
 
     @media screen and (min-width: $desktop) {
+        position: relative;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-row-gap: 30px;
         grid-column-gap: 30px;
         padding-left: 100px;
         padding-right: 100px;
+        margin-bottom: 80px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 40px;
+            display: block;
+            width: 2px;
+            height: 80%;
+            background-color: $accentColor;
+        }
     }
 }
 
 .alacart--selected {
     @media screen and (min-width: $desktop) {
         grid-column: 2/3;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50px;
+            left: -30px;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: $bgc;
+            z-index: -1;
+        }
     }
 }
 
 .alacart__box {
     position: relative;
 
-    &::after {
-        content: '';
-        position: absolute;
-        bottom: -10px;
-        left: 0;
-        display: block;
-        width: 100%;
-        height: 2px;
-        background-color: $accentColor;
+    @media screen and (max-width: 1439px) {
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: $accentColor;
+        }
     }
 }
 
