@@ -135,13 +135,19 @@
 }
 
 .package__item {
-    display: none;
+    @media screen and (max-width: 1439px) {
+        display: none;
+    }
+
+    @media screen and (min-width: $desktop) {
+        flex-basis: calc((100% - 3 * 30px) / 4);
+    }
 }
 
 .package__item--mobile {
     display: block;
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $tablet) and (max-width: 1439px) {
         display: none;
     }
 }
@@ -159,6 +165,10 @@
 .package__list {
     display: flex;
     justify-content: center;
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 60px;
+    }
 }
 
 .package__item__subtitle {
@@ -211,6 +221,10 @@
 
     @media screen and (min-width: $tablet) {
         font-size: 22px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 19px;
     }
 }
 
@@ -398,6 +412,41 @@
     position: relative;
 
     @media screen and (min-width: $tablet) {
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            right: -20px;
+            width: 3px;
+            height: 100%;
+            background-color: $accentColor;
+        }
+    }
+}
+
+.package__item:nth-child(1) {
+    position: relative;
+
+    @media screen and (min-width: $desktop) {
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            right: -20px;
+            width: 3px;
+            height: 100%;
+            background-color: $accentColor;
+            margin-right: 15px;
+        }
+    }
+}
+
+.package__item:nth-child(3) {
+    position: relative;
+
+    @media screen and (min-width: $desktop) {
         &::after {
             content: '';
             display: block;
