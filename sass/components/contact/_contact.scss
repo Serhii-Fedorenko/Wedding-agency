@@ -1,0 +1,41 @@
+.contact__title {
+    margin-bottom: 0;
+    font-family: 'Sail';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 1;
+    letter-spacing: -0.075em;
+    text-align: center;
+
+    color: $titleColor;
+}
+
+.contact__subtitle {
+    margin-top: 0;
+    margin-left: 105px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
+    letter-spacing: -0.03em;
+
+    color: $titleColor;
+}
+
+.contact__text {
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.105em;
+}
+
+.contact__hidden {
+    display: none;
+}
