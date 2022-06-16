@@ -1,4 +1,13 @@
+.contact {
+    height: 840px;
+    background-image: url('../../../images/PICTURE-min.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
 .contact__title {
+    position: relative;
     margin-bottom: 0;
     font-family: 'Sail';
     font-style: normal;
@@ -9,9 +18,24 @@
     text-align: center;
 
     color: $titleColor;
+
+    z-index: 99;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 30px;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 300px;
+        background-color: rgba(240, 240, 240, 0.5);
+        z-index: -1;
+    }
 }
 
 .contact__subtitle {
+    position: relative;
     margin-top: 0;
     margin-left: 105px;
     font-family: 'Roboto';
@@ -22,9 +46,12 @@
     letter-spacing: -0.03em;
 
     color: $titleColor;
+
+    z-index: 99;
 }
 
 .contact__text {
+    position: relative;
     padding-left: 40px;
     padding-right: 40px;
     font-family: 'Libre Baskerville';
@@ -34,8 +61,25 @@
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.105em;
+
+    z-index: 99;
 }
 
 .contact__hidden {
     display: none;
 }
+
+.contact__list {
+    padding-left: 60px;
+}
+
+.contact__link {
+    position: relative;
+    z-index: 99;
+    color: $titleColor;
+
+    &--icon {
+        fill: $titleColor;
+    }
+}
+
