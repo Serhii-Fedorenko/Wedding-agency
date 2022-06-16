@@ -3044,7 +3044,7 @@ html {
   left: 0;
   display: block;
   width: 100%;
-  height: 300px;
+  height: 350px;
   background-color: rgba(240, 240, 240, 0.5);
   z-index: -1;
 }
@@ -3082,16 +3082,35 @@ html {
 }
 
 .contact__list {
-  padding-left: 60px;
+  padding: 15px 0 15px 60px;
+}
+
+.contact__item {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.contact__item:not(:last-child) {
+  margin-bottom: 15px;
 }
 
 .contact__link {
   position: relative;
   z-index: 99;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #464646;
 }
 
 .contact__link--icon {
   fill: #464646;
+  margin-right: 20px;
 }
 /*# sourceMappingURL=main.css.map */
