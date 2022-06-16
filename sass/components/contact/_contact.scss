@@ -97,3 +97,49 @@
         margin-right: 20px;
     }
 }
+
+.form__contact {
+    margin-top: 30px;
+    text-align: center;
+
+    & input {
+        width: 60%;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    & textarea {
+        width: 60%;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    & select {
+        width: 60%;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 5px;
+    }
+}
+
+.form__button {
+    display: block;
+    margin-left: 60px;
+    margin-top: 10px;
+    width: 100px;
+    height: 20px;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.4;
+    letter-spacing: -0.055em;
+
+    border: none;
+    border-radius: 5px;
+
+    color: #ffffff;
+    background-color: $accentColor;
+}
