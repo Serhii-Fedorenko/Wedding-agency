@@ -5,6 +5,11 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom center;
+
+    @media screen and (min-width: $tablet) {
+        width: $tablet;
+        height: 1490px;
+    }
 }
 
 .contact__title {
@@ -32,6 +37,14 @@
         height: 350px;
         background-color: rgba(240, 240, 240, 0.5);
         z-index: -1;
+
+        @media screen and (min-width: $tablet) {
+            height: 450px;
+        }
+    }
+
+    @media screen and (min-width: $tablet) {
+        font-size: 70px;
     }
 }
 
@@ -49,6 +62,11 @@
     color: $titleColor;
 
     z-index: 99;
+
+    @media screen and (min-width: $tablet) {
+        margin-left: 245px;
+        font-size: 20px;
+    }
 }
 
 .contact__text {
@@ -64,6 +82,12 @@
     letter-spacing: 0.105em;
 
     z-index: 99;
+
+    @media screen and (min-width: $tablet) {
+        padding-left: 170px;
+        padding-right: 170px;
+        font-size: 20px;
+    }
 }
 
 .contact__hidden {
@@ -72,6 +96,10 @@
 
 .contact__list {
     padding: 15px 0 15px 60px;
+
+    @media screen and (min-width: $tablet) {
+        padding: 20px 0 20px 180px;
+    }
 }
 
 .contact__item {
@@ -83,6 +111,10 @@
 
     &:not(:last-child) {
         margin-bottom: 15px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        font-size: 22px;
     }
 }
 
@@ -96,12 +128,21 @@
     &--icon {
         fill: $titleColor;
         margin-right: 20px;
+
+        @media screen and (min-width: $tablet) {
+            width: 40px;
+            height: 40px;
+        }
     }
 }
 
 .form__contact {
     margin-top: 30px;
     text-align: center;
+
+    @media screen and (min-width: $tablet) {
+        margin-top: 110px;
+    }
 
     & input {
         width: 60%;
@@ -110,6 +151,13 @@
         border: none;
         border-radius: 5px;
         font-size: 12px;
+
+        @media screen and (min-width:$tablet) {
+            width: 80%;
+            height: 60px;
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
     }
 
     & textarea {
@@ -119,15 +167,32 @@
         border: none;
         border-radius: 5px;
         font-size: 12px;
+        resize: none;
+
+        @media screen and (min-width:$tablet) {
+            width: 80%;
+            height: 200px;
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
     }
 
     & select {
+        position: relative;
         width: 60%;
         margin-bottom: 10px;
         padding: 10px;
         border: none;
         border-radius: 5px;
         font-size: 12px;
+        // appearance: none;
+
+        @media screen and (min-width:$tablet) {
+            width: 80%;
+            height: 60px;
+            margin-bottom: 80px;
+            font-size: 18px;
+        }
     }
 }
 
@@ -149,4 +214,12 @@
 
     color: #ffffff;
     background-color: $accentColor;
+
+    @media screen and (min-width: $tablet) {
+        width: 300px;
+        height: 60px;
+        font-size: 35px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
