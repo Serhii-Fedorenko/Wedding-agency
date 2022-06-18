@@ -10,6 +10,12 @@
         width: $tablet;
         height: 1490px;
     }
+
+    @media screen and (min-width: $desktop) {
+        width: $desktop;
+        height: 1200px;
+        background-position: center right;
+    }
 }
 
 .contact__title {
@@ -91,7 +97,10 @@
 }
 
 .contact__hidden {
-    display: none;
+
+    @media screen and (max-width: 1439px) {
+        display: none;
+    }
 }
 
 .contact__list {
@@ -158,6 +167,10 @@
             margin-bottom: 30px;
             font-size: 18px;
         }
+
+        @media screen and (min-width: $desktop) {
+            border: 1px solid $titleColor;
+        }
     }
 
     & textarea {
@@ -174,6 +187,10 @@
             height: 200px;
             margin-bottom: 30px;
             font-size: 18px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            border: 1px solid $titleColor;
         }
     }
 
@@ -192,6 +209,10 @@
             height: 60px;
             margin-bottom: 80px;
             font-size: 18px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            border: 1px solid $titleColor;
         }
     }
 }

@@ -3034,6 +3034,14 @@ html {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .contact {
+    width: 1440px;
+    height: 1200px;
+    background-position: center right;
+  }
+}
+
 .contact__title {
   position: relative;
   margin-bottom: 0;
@@ -3115,8 +3123,10 @@ html {
   }
 }
 
-.contact__hidden {
-  display: none;
+@media screen and (max-width: 1439px) {
+  .contact__hidden {
+    display: none;
+  }
 }
 
 .contact__list {
@@ -3200,6 +3210,12 @@ html {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .form__contact input {
+    border: 1px solid #464646;
+  }
+}
+
 .form__contact textarea {
   width: 60%;
   margin-bottom: 10px;
@@ -3219,6 +3235,12 @@ html {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .form__contact textarea {
+    border: 1px solid #464646;
+  }
+}
+
 .form__contact select {
   position: relative;
   width: 60%;
@@ -3235,6 +3257,12 @@ html {
     height: 60px;
     margin-bottom: 80px;
     font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .form__contact select {
+    border: 1px solid #464646;
   }
 }
 
