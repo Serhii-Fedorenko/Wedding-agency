@@ -1,0 +1,54 @@
+.blog__header__img {
+    height: 210px;
+    background-image: url('../../../images/Rectangle\ 101-min.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.blog__img {
+    display: none;
+}
+
+.blog__text--desktop {
+    display: none;
+}
+
+.blog__title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Sail';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -0.075em;
+    text-align: center;
+
+    color: $titleColor;
+}
+
+.blog__text--mobile {
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.025em;
+
+    color: $titleColor;
+}
+
+.blog__text--call {
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.025em;
+}
+
+.blog__list-header {
+    display: none;
+}
