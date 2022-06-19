@@ -111,7 +111,7 @@
     @media screen and (min-width: $desktop) {
         padding: 0;
         margin-right: 700px;
-        margin-left: 20px;
+        margin-left: 80px;
         text-align: left;
         font-size: 18px;
     }
@@ -198,7 +198,7 @@
 
     @media screen and (min-width: $desktop) {
         display: grid;
-        grid-template-columns: 0.75fr 0.75fr 1fr;
+        grid-template-columns: 0.65fr 0.65fr 1.1fr;
         grid-template-rows: auto auto auto auto;
         grid-gap: 20px;
     }
@@ -322,6 +322,8 @@
     @media screen and (min-width: $desktop) {
         width: 250px;
         height: 50px;
+        margin-top: 0;
+        margin-right: 0;
         grid-column: 2/3;
         grid-row: 4/5;
     }
