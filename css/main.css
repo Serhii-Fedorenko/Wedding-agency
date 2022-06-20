@@ -3519,6 +3519,49 @@ html {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .blog__nav {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .blog__navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 100vw;
+    padding: 20px 55px;
+    margin-left: -9%;
+    margin-bottom: 20px;
+    background-color: #F9F4EC;
+  }
+}
+
+.blog__sublink {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.blog__sublink a {
+  color: #000000;
+}
+
+.blog__sublink a:hover, .blog__sublink a:focus {
+  color: #D59D40;
+}
+
+.blog__list-header {
+  display: none;
+}
+
 .blog__subtitle {
   margin-bottom: 0;
   font-family: 'Roboto';

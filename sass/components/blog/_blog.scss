@@ -88,6 +88,44 @@
 
 .blog__nav {
     display: none;
+
+    @media screen and (min-width: $tablet) {
+        display: block;
+    }
+}
+
+.blog__navigation {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100vw;
+        padding: 20px 55px;
+        margin-left: -9%;
+        margin-bottom: 20px;
+        background-color: $footerBgc;
+    }
+}
+
+.blog__sublink {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+
+    & a {
+        color: #000000;
+
+        &:hover,
+        &:focus {
+            color: $accentColor;
+        }
+    }
+}
+
+.blog__list-header {
+    display: none;
 }
 
 .blog__subtitle {
