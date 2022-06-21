@@ -3571,6 +3571,21 @@ html {
   display: none;
 }
 
+@media screen and (min-width: 1440px) {
+  .blog__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 3000px;
+  }
+}
+
 .blog__subtitle {
   margin-bottom: 0;
   font-family: 'Roboto';
@@ -3674,6 +3689,12 @@ small {
 @media screen and (min-width: 768px) {
   .blog__item {
     margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .blog__item {
+    width: 45%;
   }
 }
 

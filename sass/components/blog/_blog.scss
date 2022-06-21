@@ -135,6 +135,15 @@
     display: none;
 }
 
+.blog__list {
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 3000px;
+    }
+}
+
 .blog__subtitle {
     margin-bottom: 0;
     font-family: 'Roboto';
@@ -231,6 +240,11 @@ small {
 
     @media screen and (min-width: $tablet) {
         margin-bottom: 50px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        // flex-basis: calc((100% - 50px) / 2);
+        width: 45%;
     }
 }
 
