@@ -3466,6 +3466,22 @@ html {
 
 .blog__text--desktop {
   display: none;
+  margin-top: 0;
+  padding: 0 100px;
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.025em;
+  color: #464646;
+}
+
+@media screen and (min-width: 1440px) {
+  .blog__text--desktop {
+    display: inline-block;
+  }
 }
 
 .blog__title {
@@ -3531,6 +3547,19 @@ html {
 @media screen and (min-width: 768px) {
   .blog__nav {
     display: block;
+    width: 100vw;
+    margin-left: -9%;
+    background-color: #F9F4EC;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .blog__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-left: 700px;
   }
 }
 
@@ -3542,11 +3571,32 @@ html {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    width: 100vw;
     padding: 20px 55px;
-    margin-left: -9%;
     margin-bottom: 50px;
-    background-color: #F9F4EC;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .blog__navigation {
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 45%;
+    padding-left: 0;
+    margin: auto 0;
+  }
+  .blog__navigation::after {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 4%;
+    z-index: 99;
+    display: block;
+    width: 2px;
+    height: 80%;
+    background-color: #D59D40;
   }
 }
 
@@ -3567,8 +3617,25 @@ html {
   color: #D59D40;
 }
 
+@media screen and (min-width: 1440px) {
+  .blog__sublink {
+    text-align: left;
+    margin-left: 50px;
+  }
+  .blog__sublink:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
 .blog__list-header {
   display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .blog__list-header {
+    display: inline-block;
+    margin: auto 0 auto 70px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -3582,7 +3649,7 @@ html {
             flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    height: 3000px;
+    height: 2930px;
   }
 }
 
@@ -3684,6 +3751,12 @@ small {
   width: 100%;
   height: 2px;
   background-color: #D59D40;
+}
+
+@media screen and (min-width: 1440px) {
+  .blog__item::before {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
