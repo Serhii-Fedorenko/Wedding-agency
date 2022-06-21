@@ -3455,6 +3455,15 @@ html {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .blog__img {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+}
+
 .blog__text--desktop {
   display: none;
 }
@@ -3536,7 +3545,7 @@ html {
     width: 100vw;
     padding: 20px 55px;
     margin-left: -9%;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     background-color: #F9F4EC;
   }
 }
@@ -3572,6 +3581,13 @@ html {
   color: #464646;
 }
 
+@media screen and (min-width: 768px) {
+  .blog__subtitle {
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+}
+
 small {
   margin-top: 10px;
   margin-bottom: 0;
@@ -3583,6 +3599,12 @@ small {
   letter-spacing: 0.025em;
 }
 
+@media screen and (min-width: 768px) {
+  small {
+    font-size: 24px;
+  }
+}
+
 .blog__text {
   margin-top: 20px;
   margin-bottom: 0;
@@ -3592,6 +3614,13 @@ small {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.025em;
+}
+
+@media screen and (min-width: 768px) {
+  .blog__text {
+    margin-bottom: 25px;
+    font-size: 22px;
+  }
 }
 
 .blog__button {
@@ -3617,9 +3646,21 @@ small {
   background-color: #D59D40;
 }
 
+@media screen and (min-width: 768px) {
+  .blog__button {
+    font-size: 20px;
+  }
+}
+
 .blog__item {
   position: relative;
   padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .blog__item:first-child::before {
+    display: none;
+  }
 }
 
 .blog__item::before {
@@ -3628,6 +3669,12 @@ small {
   width: 100%;
   height: 2px;
   background-color: #D59D40;
+}
+
+@media screen and (min-width: 768px) {
+  .blog__item {
+    margin-bottom: 50px;
+  }
 }
 
 .blog__load-button {
