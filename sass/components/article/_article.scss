@@ -15,12 +15,16 @@
 
 .article__img--desktop {
     width: 100%;
+    margin-bottom: 70px;
     @media screen and (max-width: 1439px) {
         display: none;
     }
 }
 
 .article__extra-img {
+    width: 40%;
+    margin-left: 70px;
+    margin-right: 70px;
     @media screen and (max-width: 1439px) {
         display: none;
     }
@@ -254,6 +258,10 @@
     @media screen and (min-width: $tablet) {
         font-size: 18px;
     }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 20px;
+    }
 }
 
 .article__subtitle {
@@ -284,6 +292,13 @@
 
     @media screen and (min-width: $tablet) {
         font-size: 22px;
+    }
+}
+
+.article__content-box {
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        margin: 70px 0;
     }
 }
 
