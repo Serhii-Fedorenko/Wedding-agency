@@ -18,9 +18,10 @@
 
     @media screen and (min-width: $desktop) {
         display: flex;
+        // justify-content: space-between;
         // width: 100%;
         padding: 20px 0;
-        margin-left: 80px;
+        margin-left: 50px;
     }
 }
 
