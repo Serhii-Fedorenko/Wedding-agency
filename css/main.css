@@ -3549,6 +3549,7 @@ html {
 
 .article__foreword {
   padding: 0  250px;
+  margin-bottom: 50px;
   font-family: 'Libre Baskerville';
   font-style: normal;
   font-weight: 400;
