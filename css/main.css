@@ -3426,6 +3426,12 @@ html {
   z-index: -2;
 }
 
+@media screen and (min-width: 768px) {
+  .article__img {
+    margin-left: -60px;
+  }
+}
+
 @media screen and (max-width: 1439px) {
   .article__img--desktop {
     display: none;
@@ -3497,6 +3503,12 @@ html {
   background-color: rgba(240, 240, 240, 0.5);
 }
 
+@media screen and (min-width: 768px) {
+  .article__head--mobile {
+    margin-top: -70px;
+  }
+}
+
 .article__title--mobile {
   font-family: 'Libre Baskerville';
   font-style: normal;
@@ -3505,6 +3517,12 @@ html {
   line-height: 1.1;
   text-align: center;
   color: #464646;
+}
+
+@media screen and (min-width: 768px) {
+  .article__title--mobile {
+    font-size: 40px;
+  }
 }
 
 .article__author-date--mobile {
@@ -3516,6 +3534,15 @@ html {
   color: rgba(70, 70, 70, 0.7);
 }
 
+@media screen and (min-width: 768px) {
+  .article__author-date--mobile {
+    font-size: 16px;
+  }
+  .article__author-date--mobile span {
+    font-weight: bold;
+  }
+}
+
 .article__small--mobile {
   font-family: 'Roboto';
   font-style: normal;
@@ -3524,6 +3551,12 @@ html {
   line-height: 1.4;
   text-align: right;
   color: rgba(70, 70, 70, 0.7);
+}
+
+@media screen and (min-width: 768px) {
+  .article__small--mobile {
+    font-size: 16px;
+  }
 }
 
 .article__greetings-box {
@@ -3539,6 +3572,13 @@ html {
   margin: auto 0;
 }
 
+@media screen and (min-width: 768px) {
+  .article__author-pic--mobile {
+    width: 120px;
+    height: 120px;
+  }
+}
+
 .article__foreword--mobile {
   font-family: 'Libre Baskerville';
   font-style: normal;
@@ -3547,6 +3587,18 @@ html {
   line-height: 1.2;
   letter-spacing: 0.025em;
   padding-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .article__foreword--mobile {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-left: 40px;
+  }
+  .article__foreword--mobile span::after {
+    content: '\a';
+    white-space: pre;
+  }
 }
 
 .article__text {
@@ -3559,6 +3611,12 @@ html {
   margin-bottom: 40px;
 }
 
+@media screen and (min-width: 768px) {
+  .article__text {
+    font-size: 18px;
+  }
+}
+
 .article__subtitle {
   font-family: 'Libre Baskerville';
   font-style: normal;
@@ -3566,6 +3624,12 @@ html {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.025em;
+}
+
+@media screen and (min-width: 768px) {
+  .article__subtitle {
+    font-size: 20px;
+  }
 }
 
 .article__authors-socials {
@@ -3586,6 +3650,12 @@ html {
   letter-spacing: 0.025em;
 }
 
+@media screen and (min-width: 768px) {
+  .article__authors-call {
+    font-size: 22px;
+  }
+}
+
 .article__social-box {
   position: relative;
   text-align: center;
@@ -3600,6 +3670,12 @@ html {
   background-color: #D59D40;
 }
 
+@media screen and (min-width: 768px) {
+  .article__social-box {
+    margin-bottom: 50px;
+  }
+}
+
 .article__link-icon {
   margin: 10px;
 }
@@ -3608,9 +3684,22 @@ html {
   fill: #D59D40;
 }
 
+@media screen and (min-width: 768px) {
+  .article__link-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 .article__video-wrap {
   width: 100vw;
   height: 200px;
+}
+
+@media screen and (min-width: 768px) {
+  .article__video-wrap {
+    height: 470px;
+  }
 }
 
 .article__video {
@@ -3619,6 +3708,12 @@ html {
   margin-left: -40px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .article__video {
+    margin-left: -60px;
+  }
 }
 
 .blog__header__img {
