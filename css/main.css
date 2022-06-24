@@ -3461,10 +3461,26 @@ html {
   }
 }
 
+.article__social-box--desktop {
+  position: relative;
+  margin: 80px 200px 0 100px;
+}
+
 @media screen and (max-width: 1439px) {
   .article__social-box--desktop {
     display: none;
   }
+}
+
+.article__social-box--desktop::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -10%;
+  width: 2px;
+  height: 80%;
+  background-color: #D59D40;
 }
 
 @media screen and (min-width: 1440px) {
@@ -3717,7 +3733,7 @@ html {
 
 @media screen and (min-width: 1440px) {
   .article__text {
-    font-size: 20px;
+    line-height: 1.5;
   }
 }
 
@@ -3761,11 +3777,29 @@ html {
 }
 
 @media screen and (min-width: 1440px) {
+  .article__authors-call {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
   .article__content-box {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin: 70px 0;
+  }
+  .article__content-box::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -10%;
+    left: -20%;
+    z-index: -1;
+    width: 50%;
+    height: 120%;
+    background-color: #F0F0F0;
   }
 }
 
@@ -3789,8 +3823,23 @@ html {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .article__social-box {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .article__social-content-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .article__link-icon {
   margin: 10px;
+  fill: #464646;
 }
 
 .article__link-icon:hover, .article__link-icon:focus {
@@ -3801,6 +3850,14 @@ html {
   .article__link-icon {
     width: 40px;
     height: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .article__link-icon {
+    width: 60px;
+    height: 60px;
+    margin: 20px;
   }
 }
 
