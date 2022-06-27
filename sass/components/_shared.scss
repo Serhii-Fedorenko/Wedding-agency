@@ -12,6 +12,7 @@
 }
 
 .navigation__list {
+    position: relative;
     @media screen and (max-width: 1439px) {
         display: none;
     }
@@ -26,7 +27,13 @@
 
     &.is-open {
         display: block;
-        z-index: 999;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        z-index: 99;
+        background-color: #fff;
     }
 }
 

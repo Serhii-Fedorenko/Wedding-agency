@@ -32,7 +32,7 @@
 
     color: $titleColor;
 
-    z-index: 99;
+    z-index: 2;
 
     &::before {
 
@@ -76,7 +76,7 @@
 
     color: $titleColor;
 
-    z-index: 99;
+    z-index: 2;
 
     @media screen and (min-width: $tablet) {
         margin-left: 245px;
@@ -100,7 +100,7 @@
     text-align: center;
     letter-spacing: 0.105em;
 
-    z-index: 99;
+    z-index: 2;
 
     @media screen and (min-width: $tablet) {
         padding-left: 170px;
@@ -190,7 +190,7 @@
 .form__contact {
     margin-top: 30px;
     text-align: center;
-    text-align: left;
+    // text-align: left;
 
     @media screen and (min-width: $tablet) {
         margin-top: 110px;
