@@ -317,6 +317,11 @@ html {
   }
 }
 
+.navigation__list.is-open {
+  display: block;
+  z-index: 999;
+}
+
 @media screen and (min-width: 1440px) {
   .navigation__item {
     font-family: 'Libre Baskerville';

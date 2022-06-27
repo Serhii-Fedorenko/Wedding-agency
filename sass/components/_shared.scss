@@ -23,6 +23,11 @@
         padding: 20px 0;
         margin-left: 50px;
     }
+
+    &.is-open {
+        display: block;
+        z-index: 999;
+    }
 }
 
 .navigation__item {
