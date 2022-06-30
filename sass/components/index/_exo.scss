@@ -18,7 +18,7 @@
     }
 
     @media screen and (min-width: $desktop) {
-        font-size: 80px;
+        font-size: 60px;
         margin-left: 450px;
     }
 }
@@ -114,7 +114,7 @@
     }
 
     @media screen and (min-width: $desktop) {
-        font-size: 25px;
+        font-size: 20px;
         margin-left: 710px;
     }
 }
@@ -124,7 +124,7 @@
 
     @media screen and (min-width: $desktop) {
         display: flex;
-        padding: 100px 40px;
+        padding: 40px;
     }
 }
 
@@ -138,10 +138,6 @@
 
     @media screen and (min-width: $tablet) {
         font-size: 25px;
-    }
-
-    @media screen and (min-width: $desktop) {
-        font-size: 32px;
     }
 }
 
@@ -162,7 +158,7 @@
     }
 
     @media screen and (min-width: $desktop) {
-        font-size: 24px;
+        font-size: 20px;
     }
 }
 
@@ -193,11 +189,11 @@
         font-size: 20px;
     }
 
-    @media screen and (min-width: $desktop) {
-        width: 300px;
-        height: 60px;
-        font-size: 22px;
-    }
+    // @media screen and (min-width: $desktop) {
+    //     width: 300px;
+    //     height: 60px;
+    //     font-size: 22px;
+    // }
 }
 
 .exo__item {

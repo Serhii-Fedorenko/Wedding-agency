@@ -33,7 +33,7 @@
     @media screen and (min-width: $desktop) {
         margin-left: 30px;
         text-align: left;
-        font-size: 105px;
+        font-size: 80px;
     }
 }
 
@@ -58,7 +58,7 @@
         margin-left: 40px;
         font-family: 'Roboto';
         text-align: left;
-        font-size: 37px;
+        font-size: 25px;
     }
 }
 
@@ -94,7 +94,7 @@
     }
 
     @media screen and (min-width: $desktop) {
-        font-size: 24px;
+        font-size: 20px;
         padding: 0 400px 0 40px;
     }
 }
@@ -191,7 +191,7 @@
                 rgba(255, 255, 255, 0.6)
             ),
             url('../../../images/Group\ 5-min.jpg');
-        background-size: 100% auto;
+        background-size: contain;
     }
 }
 

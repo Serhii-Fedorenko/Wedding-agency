@@ -428,7 +428,7 @@ html {
 @media screen and (min-width: 1440px) {
   .footer__title {
     text-align: left;
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 
@@ -456,6 +456,14 @@ html {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.footer__link {
+  color: #D59D40;
+}
+
+.footer__link:hover, .footer__link:focus {
+  color: #464646;
 }
 
 .author {
@@ -1452,7 +1460,7 @@ html {
   font-family: 'Libre Baskerville';
   font-style: normal;
   font-weight: 400;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 1.1;
   letter-spacing: 0.06em;
   color: #D59D40;
@@ -1462,7 +1470,7 @@ html {
   font-family: 'Libre Baskerville';
   font-style: italic;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.1;
   letter-spacing: 0.045em;
 }
@@ -1541,7 +1549,7 @@ html {
   .wedding-stories__title {
     margin-left: 30px;
     text-align: left;
-    font-size: 105px;
+    font-size: 80px;
   }
 }
 
@@ -1569,7 +1577,7 @@ html {
     margin-left: 40px;
     font-family: 'Roboto';
     text-align: left;
-    font-size: 37px;
+    font-size: 25px;
   }
 }
 
@@ -1611,7 +1619,7 @@ html {
 
 @media screen and (min-width: 1440px) {
   .wedding-stories__text {
-    font-size: 24px;
+    font-size: 20px;
     padding: 0 400px 0 40px;
   }
 }
@@ -1714,7 +1722,7 @@ html {
     height: 800px;
     background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.6))), url("../../../images/Group 5-min.jpg");
     background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../../../images/Group 5-min.jpg");
-    background-size: 100% auto;
+    background-size: contain;
   }
 }
 
@@ -1766,7 +1774,7 @@ html {
 
 @media screen and (min-width: 1440px) {
   .exo__title {
-    font-size: 80px;
+    font-size: 60px;
     margin-left: 450px;
   }
 }
@@ -1875,7 +1883,7 @@ html {
 
 @media screen and (min-width: 1440px) {
   .exo__call {
-    font-size: 25px;
+    font-size: 20px;
     margin-left: 710px;
   }
 }
@@ -1889,7 +1897,7 @@ html {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 100px 40px;
+    padding: 40px;
   }
 }
 
@@ -1905,12 +1913,6 @@ html {
 @media screen and (min-width: 768px) {
   .exo__subtitle {
     font-size: 25px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .exo__subtitle {
-    font-size: 32px;
   }
 }
 
@@ -1934,7 +1936,7 @@ html {
 
 @media screen and (min-width: 1440px) {
   .exo__text {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
@@ -1964,14 +1966,6 @@ html {
     width: 200px;
     height: 40px;
     font-size: 20px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .exo__button {
-    width: 300px;
-    height: 60px;
-    font-size: 22px;
   }
 }
 
@@ -2039,7 +2033,9 @@ html {
 
 @media screen and (min-width: 1440px) {
   .cont__box {
-    height: 940px;
+    height: 640px;
+    background-size: cover;
+    background-position: 0 -110px;
   }
 }
 
@@ -2069,9 +2065,9 @@ html {
 
 @media screen and (min-width: 1440px) {
   .cont__title {
-    margin-top: 740px;
+    margin-top: 560px;
     margin-left: 350px;
-    font-size: 115px;
+    font-size: 80px;
   }
 }
 
@@ -2098,8 +2094,8 @@ html {
 @media screen and (min-width: 1440px) {
   .cont__call {
     margin-left: 630px;
-    margin-top: -25px;
-    font-size: 31px;
+    margin-top: -15px;
+    font-size: 18px;
   }
 }
 
@@ -2125,7 +2121,7 @@ html {
     width: 670px;
     padding-left: 80px;
     padding-right: 40px;
-    font-size: 26px;
+    font-size: 22px;
   }
 }
 
@@ -2136,7 +2132,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 @media screen and (min-width: 1440px) {
@@ -2144,6 +2140,7 @@ html {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     margin-bottom: 70px;
+    margin-top: 100px;
   }
 }
 
@@ -2215,7 +2212,7 @@ html {
 
 @media screen and (min-width: 1440px) {
   .cont__item {
-    font-size: 28px;
+    font-size: 20px;
   }
 }
 
@@ -2229,11 +2226,12 @@ html {
   color: #464646;
 }
 
-.cont__link:hover {
+.cont__link:hover, .cont__link:focus {
   color: #D59D40;
 }
 
-.cont__link:hover .cont__item--icon {
+.cont__link:hover .cont__item--icon,
+.cont__link:focus .cont__item--icon {
   fill: #D59D40;
 }
 
@@ -2310,8 +2308,8 @@ html {
 
 @media screen and (min-width: 1440px) {
   .cont__item--icon {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   }
 }
 
