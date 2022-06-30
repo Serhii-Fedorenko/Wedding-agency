@@ -1,176 +1,191 @@
 .container {
-    max-width: 1900px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 40px;
-    padding-right: 40px;
+  max-width: 1900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
 
-    @media screen and (min-width: $tablet) {
-        padding-left: 60px;
-        padding-right: 60px;
-    }
+  @media screen and (min-width: $tablet) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
 
 .navigation__list {
-    position: relative;
-    @media screen and (max-width: 1439px) {
-        display: none;
-    }
+  position: relative;
 
-    @media screen and (min-width: $desktop) {
-        display: flex;
-        // justify-content: space-between;
-        // width: 100%;
-        padding: 20px 0;
-        margin-left: 50px;
-    }
+  background-color: transparent;
+  @media screen and (max-width: 1439px) {
+    display: none;
+  }
 
-    &.is-open {
-        display: block;
-        text-align: center;
-        width: 100%;
-        position: absolute;
-        top: 40px;
-        left: 0;
-        z-index: 99;
-        background-color: #fff;
-    }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    // justify-content: space-between;
+    // width: 100%;
+    padding: 20px 0;
+    // margin-left: 50px;
+  }
+
+  &.is-open {
+    display: block;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 37px;
+    left: 0;
+    z-index: 99;
+    background-color: #fff;
+  }
+}
+
+.navigation {
+  background-color: transparent;
 }
 
 .navigation__item {
-    @media screen and (min-width: $desktop) {
-        font-family: 'Libre Baskerville';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 1.1;
-        letter-spacing: 0.055em;
+  margin: 20px;
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.1;
+  letter-spacing: 0.055em;
+  @media screen and (min-width: $desktop) {
+    font-size: 20px;
 
-        &:not(:last-child) {
-            margin-right: 30px;
-        }
+    &:not(:last-child) {
+      margin-right: 10px;
     }
+  }
 }
 
 .navigation__link {
-    color: $navigationItemColor;
+  color: $navigationItemColor;
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
 }
 
 .header {
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    display: flex;
+  position: relative;
+  z-index: 99;
+  width: 100%;
+  display: flex;
+
+  background-color: transparent;
 }
 
 .mobile-button {
-    display: inline-block;
-    margin-left: auto;
-    padding: 10px;
-    background-color: transparent;
-    border: none;
+  display: inline-block;
+  margin-left: auto;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
 
-    @media screen and (min-width: $desktop) {
-        display: none;
-    }
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
 }
 
 .footer {
-    padding: 20px 40px;
-    background-color: $footerBgc;
+  padding: 20px 40px;
+  background-color: $footerBgc;
 
-    @media screen and (min-width: $tablet) {
-        padding: 20px 60px;
-    }
+  @media screen and (min-width: $tablet) {
+    padding: 20px 60px;
+  }
 
-    @media screen and (min-width: $desktop) {
-        display: flex;
-    }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
 }
 
 .footer__title {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
 
-    letter-spacing: 0.015em;
+  letter-spacing: 0.015em;
 
-    color: $accentColor;
+  color: $accentColor;
 
-    @media screen and (min-width: $tablet) {
-        text-align: center;
-        font-family: 'Libre Baskerville';
-        font-size: 25px;
-    }
+  @media screen and (min-width: $tablet) {
+    text-align: center;
+    font-family: 'Libre Baskerville';
+    font-size: 25px;
+  }
 
-    @media screen and (min-width: $desktop) {
-        text-align: left;
-        font-size: 30px;
-    }
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+    font-size: 30px;
+  }
 }
 
 .footer__item {
-    flex-basis: calc((100% - 10px) / 2);
-    margin-bottom: 15px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 10px;
-    line-height: 1.4;
+  flex-basis: calc((100% - 10px) / 2);
+  margin-bottom: 15px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1.4;
 
-    color: $accentColor;
+  color: $accentColor;
 
-    @media screen and (min-width: $tablet) {
-        font-size: 20px;
-    }
+  @media screen and (min-width: $tablet) {
+    font-size: 20px;
+  }
 }
 
 .footer__list {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .author {
-    display: block;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 8px;
-    line-height: 1.2;
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 1.2;
 
-    color: #bebebe;
+  color: #bebebe;
 
-    @media screen and (min-width: $tablet) {
-        width: 60%;
-        font-size: 20px;
-    }
+  @media screen and (min-width: $tablet) {
+    width: 60%;
+    font-size: 20px;
+  }
 
-    @media screen and (min-width: $desktop) {
-        width: 100%;
-        text-align: center;
-    }
+  @media screen and (min-width: $desktop) {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .header__img {
-    @media screen and (min-width: $desktop) {
-        width: 100vw;
-        height: 100vh;
-        background-color: #000000;
-        background-image: linear-gradient(
-                0.25turn,
-                rgba(0, 0, 0, 0.7),
-                rgba(0, 0, 0, 0.1),
-                rgba(0, 0, 0, 0.7)
-            ),
-            url('../../images/desktop-main-top-min.png'),
-            url('../../images/desktop-main-backdrop-min.jpg');
-        background-size: 80% auto;
-        background-repeat: no-repeat;
-        background-position: bottom center;
-    }
+  @media screen and (min-width: $desktop) {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    background-image: linear-gradient(
+        0.25turn,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url('../../images/desktop-main-top-min.png'),
+      url('../../images/desktop-main-backdrop-min.jpg');
+    background-size: 80% auto;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+  }
 }

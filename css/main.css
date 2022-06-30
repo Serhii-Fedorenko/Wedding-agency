@@ -303,6 +303,7 @@ html {
 
 .navigation__list {
   position: relative;
+  background-color: transparent;
 }
 
 @media screen and (max-width: 1439px) {
@@ -317,7 +318,6 @@ html {
     display: -ms-flexbox;
     display: flex;
     padding: 20px 0;
-    margin-left: 50px;
   }
 }
 
@@ -326,23 +326,32 @@ html {
   text-align: center;
   width: 100%;
   position: absolute;
-  top: 40px;
+  top: 37px;
   left: 0;
   z-index: 99;
   background-color: #fff;
 }
 
+.navigation {
+  background-color: transparent;
+}
+
+.navigation__item {
+  margin: 20px;
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.1;
+  letter-spacing: 0.055em;
+}
+
 @media screen and (min-width: 1440px) {
   .navigation__item {
-    font-family: 'Libre Baskerville';
-    font-style: normal;
-    font-weight: 400;
     font-size: 20px;
-    line-height: 1.1;
-    letter-spacing: 0.055em;
   }
   .navigation__item:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 10px;
   }
 }
 
@@ -350,13 +359,18 @@ html {
   color: #0D0A09;
 }
 
+.navigation__link:hover, .navigation__link:focus {
+  color: #D59D40;
+}
+
 .header {
-  position: absolute;
-  z-index: 1;
+  position: relative;
+  z-index: 99;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: transparent;
 }
 
 .mobile-button {
@@ -509,7 +523,7 @@ html {
   .hero {
     height: 1200px;
     background-size: contain;
-    background-position: 0 60px;
+    background-position: 0 0px;
   }
 }
 
