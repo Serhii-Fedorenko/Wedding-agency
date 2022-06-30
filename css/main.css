@@ -296,8 +296,15 @@ html {
 
 @media screen and (min-width: 768px) {
   .container {
+    width: 768px;
     padding-left: 60px;
     padding-right: 60px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
   }
 }
 
@@ -2328,9 +2335,9 @@ html {
 @media screen and (min-width: 1440px) {
   .packages__header__img {
     width: 100vw;
-    height: 470px;
+    height: 380px;
     background-image: url("../../../images/MAIN_PIC-min.jpg");
-    background-size: cover;
+    background-size: contain;
   }
 }
 
@@ -2410,7 +2417,7 @@ html {
 
 @media screen and (min-width: 1440px) {
   .package__title {
-    font-size: 170px;
+    font-size: 120px;
     text-align: center;
   }
 }
@@ -2434,8 +2441,8 @@ html {
 
 @media screen and (min-width: 1440px) {
   .package__subtitle {
-    font-size: 41px;
-    margin-left: 500px;
+    font-size: 31px;
+    margin-left: 580px;
   }
 }
 
@@ -2462,8 +2469,9 @@ html {
 
 @media screen and (min-width: 1440px) {
   .package__head-text {
-    font-size: 33px;
+    font-size: 24px;
     width: 75%;
+    text-align: center;
   }
 }
 
@@ -2545,6 +2553,12 @@ html {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .package__item__subtitle {
+    font-size: 21px;
+  }
+}
+
 .package__item__subtitle--accent {
   color: #D59D40;
 }
@@ -2563,6 +2577,12 @@ html {
   margin-bottom: 10px;
 }
 
+@media screen and (min-width: 1440px) {
+  .package__item__collection:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .package__item__collection {
     font-size: 22px;
@@ -2571,7 +2591,7 @@ html {
 
 @media screen and (min-width: 1440px) {
   .package__item__collection {
-    font-size: 19px;
+    font-size: 18px;
   }
 }
 
@@ -2605,6 +2625,12 @@ html {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .package__item__price--old {
+    font-size: 35px;
+  }
+}
+
 .package__item__price--new {
   margin-top: 0;
   font-family: 'Sail';
@@ -2620,6 +2646,12 @@ html {
 @media screen and (min-width: 768px) {
   .package__item__price--new {
     font-size: 60px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .package__item__price--new {
+    font-size: 50px;
   }
 }
 
@@ -2660,6 +2692,12 @@ html {
     top: -30%;
     left: -10%;
     padding: 60px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .clarification::before {
+    font-size: 50px;
   }
 }
 
@@ -2755,6 +2793,12 @@ html {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .package__costomize-text {
+    font-size: 22px;
+  }
+}
+
 .package__costomize-button {
   margin-left: auto;
   margin-right: auto;
@@ -2794,9 +2838,9 @@ html {
 
 @media screen and (min-width: 1440px) {
   .package__costomize-button {
-    width: 250px;
-    height: 50px;
-    font-size: 26px;
+    width: 200px;
+    height: 40px;
+    font-size: 22px;
   }
 }
 
@@ -2874,12 +2918,12 @@ html {
 .package__item:nth-child(3) .package__item__subtitle::before {
   content: 'Bestseller';
   position: absolute;
-  top: -80%;
-  left: 34%;
+  top: -110%;
+  left: 36%;
   font-family: 'Roboto';
   font-style: italic;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.2;
   letter-spacing: -0.015em;
   color: #D59D40;
@@ -2913,6 +2957,12 @@ html {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .package__alacart__title::before {
+    left: 38%;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .package__alacart__title {
     text-align: center;
@@ -2922,7 +2972,7 @@ html {
 
 @media screen and (min-width: 1440px) {
   .package__alacart__title {
-    font-size: 170px;
+    font-size: 110px;
   }
 }
 
@@ -2945,7 +2995,7 @@ html {
 
 @media screen and (min-width: 1440px) {
   .package__alacart__subtitle {
-    font-size: 39px;
+    font-size: 27px;
   }
 }
 

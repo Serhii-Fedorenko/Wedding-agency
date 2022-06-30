@@ -9,9 +9,9 @@
 
     @media screen and (min-width: $desktop) {
         width: 100vw;
-        height: 470px;
+        height: 380px;
         background-image: url('../../../images/MAIN_PIC-min.jpg');
-        background-size: cover;
+        background-size: contain;
     }
 }
 
@@ -83,7 +83,7 @@
     }
 
     @media screen and (min-width: $desktop) {
-        font-size: 170px;
+        font-size: 120px;
         text-align: center;
     }
 }
@@ -104,8 +104,8 @@
     }
 
     @media screen and (min-width: $desktop) {
-        font-size: 41px;
-        margin-left: 500px;
+        font-size: 31px;
+        margin-left: 580px;
     }
 }
 
@@ -128,8 +128,9 @@
     }
 
     @media screen and (min-width: $desktop) {
-        font-size: 33px;
+        font-size: 24px;
         width: 75%;
+        text-align: center;
     }
 }
 
@@ -198,6 +199,10 @@
         font-size: 26px;
         line-height: 1.1;
     }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 21px;
+    }
 }
 
 .package__item__subtitle--accent {
@@ -216,6 +221,10 @@
 
     &:not(:last-child) {
         margin-bottom: 10px;
+
+        @media screen and (min-width: $desktop) {
+            margin-bottom: 5px;
+        }
     }
 
     @media screen and (min-width: $tablet) {
@@ -223,7 +232,7 @@
     }
 
     @media screen and (min-width: $desktop) {
-        font-size: 19px;
+        font-size: 18px;
     }
 }
 
@@ -253,6 +262,10 @@
     @media screen and (min-width: $tablet) {
         font-size: 40px;
     }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 35px;
+    }
 }
 
 .package__item__price--new {
@@ -269,6 +282,10 @@
 
     @media screen and (min-width: $tablet) {
         font-size: 60px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 50px;
     }
 }
 
@@ -304,6 +321,10 @@
             top: -30%;
             left: -10%;
             padding: 60px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            font-size: 50px;
         }
     }
 
@@ -387,7 +408,7 @@
     }
 
     @media screen and (min-width: $desktop) {
-        // margin: 0;
+        font-size: 22px;
     }
 }
 
@@ -424,9 +445,9 @@
     }
 
     @media screen and (min-width: $desktop) {
-        width: 250px;
-        height: 50px;
-        font-size: 26px;
+        width: 200px;
+        height: 40px;
+        font-size: 22px;
     }
 }
 
@@ -498,12 +519,12 @@
     &::before {
         content: 'Bestseller';
         position: absolute;
-        top: -80%;
-        left: 34%;
+        top: -110%;
+        left: 36%;
         font-family: 'Roboto';
         font-style: italic;
         font-weight: 500;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 1.2;
         letter-spacing: -0.015em;
 
@@ -534,6 +555,10 @@
         @media screen and (min-width: $tablet) {
             left: 32%;
         }
+
+        @media screen and (min-width: $desktop) {
+            left: 38%;
+        }
     }
 
     @media screen and (min-width: $tablet) {
@@ -542,7 +567,7 @@
     }
 
     @media screen and (min-width: $desktop) {
-        font-size: 170px;
+        font-size: 110px;
     }
 }
 
@@ -562,7 +587,7 @@
     }
 
     @media screen and (min-width: $desktop) {
-        font-size: 39px;
+        font-size: 27px;
     }
 }
 
