@@ -1315,6 +1315,10 @@ html {
   }
 }
 
+.faq__list {
+  position: relative;
+}
+
 @media screen and (min-width: 1440px) {
   .faq__list {
     padding: 70px 30px;
@@ -1453,6 +1457,11 @@ html {
   letter-spacing: 0.045em;
 }
 
+.faq__track-container {
+  position: relative;
+  overflow: hidden;
+}
+
 .faq__corousel-button {
   position: absolute;
   top: 50%;
@@ -1474,6 +1483,12 @@ html {
   right: 0;
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
+}
+
+@media screen and (min-width: 1440px) {
+  .faq__corousel-button {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
