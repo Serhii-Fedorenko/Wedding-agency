@@ -19,7 +19,7 @@
     @media screen and (min-width: $desktop) {
         height: 500px;
         background-image: url('../../../images/Rectangle\ 112-min.png');
-        background-size: 100% 100%;
+        background-size: contain;
         background-position: 0 0;
     }
 }
@@ -67,7 +67,7 @@
     }
 
     @media screen and (min-width: $desktop) {
-        font-size: 100px;
+        font-size: 4rem;
         color: #ffffff;
     }
 }
@@ -114,7 +114,7 @@
     }
 
     @media screen and (min-width: $desktop) {
-        font-size: 25px;
+        font-size: 1,025rem;
     }
 }
 
@@ -137,7 +137,7 @@
     }
 
     @media screen and (min-width: $desktop) {
-        font-size: 22px;
+        font-size: 1,075rem;
         width: 70%;
         margin-left: 130px;
     }
@@ -169,7 +169,10 @@
 
     @media screen and (min-width: $desktop) {
         position: absolute;
-        bottom: 20px;
-        left: 340px;
+        bottom: 140px;
+        left: 320px;
+        width: 200px;
+        height: 40px;
+        font-size: 26px;
     }
 }

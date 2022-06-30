@@ -1,204 +1,211 @@
 .hero {
-    position: relative;
-    min-height: 100vh;
-    background-image: linear-gradient(
-            0deg,
-            rgba(255, 255, 255, 0.6),
-            rgba(255, 255, 255, 0.6)
-        ),
-        url('../../../images/desktop-hero-min.png');
-    background-size: cover;
-    background-position: -160px 0px;
+  position: relative;
+  min-height: 100vh;
+  background-image: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
+    ),
+    url('../../../images/desktop-hero-min.png');
+  background-size: cover;
+  background-position: -160px 0px;
 
-    @media screen and (min-width: 600px) {
-        background-repeat: no-repeat;
-    }
+  @media screen and (min-width: 600px) {
+    background-repeat: no-repeat;
+  }
 
-    @media screen and (min-width: $tablet) {
-        background-image: url('../../../images/desktop-hero-min.png');
-        background-position: -180px 0px;
-    }
+  @media screen and (min-width: $tablet) {
+    background-image: url('../../../images/desktop-hero-min.png');
+    background-position: -180px 0px;
+  }
 
-    @media screen and (min-width: $desktop) {
-        height: 1200px;
-        background-size: contain;
-        background-position: 0 0px;
-    }
+  @media screen and (min-width: $desktop) {
+    height: 100vh;
+    background-size: contain;
+    background-position: 0 0px;
+  }
 }
 
 .hero__title {
-    display: inline-block;
-    margin-top: 30px;
-    margin-bottom: 0;
-    text-align: right;
-    font-family: 'Sail';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -0.075em;
-    color: $titleColor;
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 0;
+  text-align: right;
+  font-family: 'Sail';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -0.075em;
+  color: $titleColor;
 
-    @media screen and (min-width: $tablet) {
-        margin-top: 81px;
-        font-size: 110px;
-        letter-spacing: -0.035em;
-        text-align: left;
-    }
+  @media screen and (min-width: $tablet) {
+    margin-top: 81px;
+    font-size: 110px;
+    letter-spacing: -0.035em;
+    text-align: left;
+  }
 
-    @media screen and (min-width: $desktop) {
-        font-size: 140px;
-        margin-right: 40px;
-    }
+  @media screen and (min-width: $desktop) {
+    font-size: 6, 875rem;
+    margin-right: 40px;
+    margin-top: 40px;
+  }
 }
 
 .hero__subtitle {
-    margin-top: 0;
-    margin-bottom: 47px;
-    text-align: right;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 47px;
+  text-align: right;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
 
-    @media screen and (min-width: $tablet) {
-        font-size: 20px;
-    }
+  @media screen and (min-width: $tablet) {
+    font-size: 20px;
+  }
 
-    @media screen and (min-width: $desktop) {
-        font-size: 30px;
-        margin-right: 40px;
-    }
+  @media screen and (min-width: $desktop) {
+    font-size: 1, 25rem;
+    margin-right: 40px;
+  }
 }
 
 .hero__text {
-    margin-top: 0;
-    margin-bottom: 325px;
-    font-family: 'Libre Baskerville';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.2;
-    letter-spacing: 0.105em;
+  margin-top: 0;
+  margin-bottom: 325px;
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.105em;
 
-    @media screen and (min-width: $tablet) {
-        font-size: 20px;
-        margin-left: 400px;
-        margin-bottom: 0;
-        padding-bottom: 325px;
-        text-align: center;
-    }
+  @media screen and (min-width: $tablet) {
+    font-size: 20px;
+    margin-left: 400px;
+    margin-bottom: 0;
+    padding-bottom: 325px;
+    text-align: center;
+  }
 
-    @media screen and (min-width: $desktop) {
-        font-size: 26px;
-        margin-left: 800px;
-        margin-right: 20px;
-    }
+  @media screen and (min-width: $desktop) {
+    font-size: 1, 25rem;
+    margin-left: 800px;
+    margin-right: 20px;
+  }
 }
 
 .hero__list {
-    position: relative;
-    display: none;
-    text-align: center;
+  position: relative;
+  display: none;
+  text-align: center;
 
-    @media screen and (min-width: $tablet) {
-        padding-left: 50px;
-        text-align: left;
+  @media screen and (min-width: $tablet) {
+    padding-left: 50px;
+    text-align: left;
 
-        &::after {
-            content: '';
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 400px;
-            width: 2px;
-            height: 100%;
-            background-color: $accentColor;
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 400px;
+      width: 2px;
+      height: 100%;
+      background-color: $accentColor;
 
-            @media screen and (min-width: $desktop) {
-                left: 350px;
-            }
-        }
-
-        @media screen and (min-width: $desktop) {
-            text-align: right;
-        }
+      @media screen and (min-width: $desktop) {
+        left: 350px;
+      }
     }
 
     @media screen and (min-width: $desktop) {
-        position: absolute;
-        display: block;
-        top: 50%;
-        left: 50%;
+      text-align: right;
     }
+  }
+
+  @media screen and (min-width: $desktop) {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 30%;
+  }
 }
 
 .hero__submenu {
-    position: absolute;
-    top: 600px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 600px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-image: url('../../../images/arrow.png');
+  background-size: contain;
+
+  &:hover ~ .hero__list {
     display: block;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background-image: url('../../../images/arrow.png');
-    background-size: contain;
+  }
 
-    &:hover ~ .hero__list {
-        display: block;
-    }
-
-    @media screen and (min-width: $desktop) {
-        display: none;
-    }
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
 }
 
 .hero__item {
-    margin-bottom: 33px;
+  margin-bottom: 15px;
 
-    &:first-child {
-        margin-top: 33px;
-    }
+  &:first-child {
+    margin-top: 33px;
+  }
 }
 
 .hero__link {
-    font-family: 'Libre Baskerville';
-    font-style: normal;
-    font-weight: 400;
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  color: $accentColor;
+  transition: color 300ms ease-in-out;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 21px;
+  }
+
+  @media screen and (min-width: $desktop) {
     font-size: 18px;
-    line-height: 1.2;
-    color: $accentColor;
 
-    @media screen and (min-width: $tablet) {
-        font-size: 21px;
+    &:hover,
+    &:focus {
+      color: $titleColor;
     }
-
-    @media screen and (min-width: $desktop) {
-        font-size: 18px;
-    }
+  }
 }
 
 .hero__hidden-text {
-    display: none;
+  display: none;
 }
 
 .bold {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .hero__breakline::after {
-    @media screen and (min-width: $tablet) and (max-width: 1439px) {
-        content: '\a';
-        white-space: pre;
-    }
+  @media screen and (min-width: $tablet) and (max-width: 1439px) {
+    content: '\a';
+    white-space: pre;
+  }
 }
 
 .hero__title--position {
-    text-align: right;
+  text-align: right;
 }
 
 .hero__desktop-positioned {
-    position: relative;
+  position: relative;
 }

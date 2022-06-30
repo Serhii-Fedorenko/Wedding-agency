@@ -317,7 +317,6 @@ html {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 20px 0;
   }
 }
 
@@ -357,6 +356,8 @@ html {
 
 .navigation__link {
   color: #0D0A09;
+  -webkit-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
 }
 
 .navigation__link:hover, .navigation__link:focus {
@@ -521,7 +522,7 @@ html {
 
 @media screen and (min-width: 1440px) {
   .hero {
-    height: 1200px;
+    height: 100vh;
     background-size: contain;
     background-position: 0 0px;
   }
@@ -552,8 +553,9 @@ html {
 
 @media screen and (min-width: 1440px) {
   .hero__title {
-    font-size: 140px;
+    font-size: 6, 875rem;
     margin-right: 40px;
+    margin-top: 40px;
   }
 }
 
@@ -576,7 +578,7 @@ html {
 
 @media screen and (min-width: 1440px) {
   .hero__subtitle {
-    font-size: 30px;
+    font-size: 1, 25rem;
     margin-right: 40px;
   }
 }
@@ -604,7 +606,7 @@ html {
 
 @media screen and (min-width: 1440px) {
   .hero__text {
-    font-size: 26px;
+    font-size: 1, 25rem;
     margin-left: 800px;
     margin-right: 20px;
   }
@@ -650,7 +652,7 @@ html {
     position: absolute;
     display: block;
     top: 50%;
-    left: 50%;
+    left: 30%;
   }
 }
 
@@ -679,7 +681,7 @@ html {
 }
 
 .hero__item {
-  margin-bottom: 33px;
+  margin-bottom: 15px;
 }
 
 .hero__item:first-child {
@@ -693,6 +695,8 @@ html {
   font-size: 18px;
   line-height: 1.2;
   color: #D59D40;
+  -webkit-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
 }
 
 @media screen and (min-width: 768px) {
@@ -704,6 +708,9 @@ html {
 @media screen and (min-width: 1440px) {
   .hero__link {
     font-size: 18px;
+  }
+  .hero__link:hover, .hero__link:focus {
+    color: #464646;
   }
 }
 
@@ -1091,7 +1098,7 @@ html {
   .pack {
     height: 500px;
     background-image: url("../../../images/Rectangle 112-min.png");
-    background-size: 100% 100%;
+    background-size: contain;
     background-position: 0 0;
   }
 }
@@ -1143,7 +1150,7 @@ html {
 
 @media screen and (min-width: 1440px) {
   .pack__title {
-    font-size: 100px;
+    font-size: 4rem;
     color: #ffffff;
   }
 }
@@ -1197,7 +1204,7 @@ html {
 
 @media screen and (min-width: 1440px) {
   .pack__subtitle {
-    font-size: 25px;
+    font-size: 1,025rem;
   }
 }
 
@@ -1223,7 +1230,7 @@ html {
 
 @media screen and (min-width: 1440px) {
   .pack__call {
-    font-size: 22px;
+    font-size: 1,075rem;
     width: 70%;
     margin-left: 130px;
   }
@@ -1259,8 +1266,11 @@ html {
 @media screen and (min-width: 1440px) {
   .pack__button {
     position: absolute;
-    bottom: 20px;
-    left: 340px;
+    bottom: 140px;
+    left: 320px;
+    width: 200px;
+    height: 40px;
+    font-size: 26px;
   }
 }
 
