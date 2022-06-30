@@ -4076,7 +4076,7 @@ html {
   font-family: 'Libre Baskerville';
   font-style: normal;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.025em;
@@ -4111,7 +4111,7 @@ html {
 @media screen and (min-width: 1440px) {
   .blog__title {
     margin-top: 150px;
-    font-size: 120px;
+    font-size: 100px;
   }
 }
 
@@ -4139,6 +4139,7 @@ html {
 @media screen and (min-width: 1440px) {
   .blog__text--mobile {
     margin: 0;
+    font-size: 20px;
   }
 }
 
@@ -4155,6 +4156,12 @@ html {
 @media screen and (min-width: 768px) {
   .blog__text--call {
     font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .blog__text--call {
+    font-size: 20px;
   }
 }
 
@@ -4239,6 +4246,7 @@ html {
   .blog__sublink {
     text-align: left;
     margin-left: 50px;
+    font-size: 18px;
   }
   .blog__sublink:not(:last-child) {
     margin-bottom: 10px;
@@ -4267,7 +4275,7 @@ html {
             flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    height: 2930px;
+    height: 2650px;
   }
 }
 
@@ -4288,6 +4296,12 @@ html {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .blog__subtitle {
+    font-size: 20px;
+  }
+}
+
 small {
   margin-top: 10px;
   margin-bottom: 0;
@@ -4302,6 +4316,12 @@ small {
 @media screen and (min-width: 768px) {
   small {
     font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  small {
+    font-size: 20px;
   }
 }
 
@@ -4320,6 +4340,12 @@ small {
   .blog__text {
     margin-bottom: 25px;
     font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .blog__text {
+    font-size: 18px;
   }
 }
 
@@ -4349,6 +4375,12 @@ small {
 @media screen and (min-width: 768px) {
   .blog__button {
     font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .blog__button {
+    font-size: 18px;
   }
 }
 
@@ -4416,9 +4448,9 @@ small {
 
 @media screen and (min-width: 1440px) {
   .blog__load-button {
-    width: 300px;
-    height: 60px;
-    font-size: 30px;
+    width: 250px;
+    height: 50px;
+    font-size: 25px;
   }
 }
 /*# sourceMappingURL=main.css.map */
