@@ -2323,7 +2323,7 @@ html {
 
 .packages__header__img {
   height: 250px;
-  background-image: url("../../../images/Rectangle 70-min.jpg");
+  background-image: url("../images/Rectangle 70-min.jpg");
   background-size: 100% 100%;
 }
 
@@ -2337,7 +2337,7 @@ html {
   .packages__header__img {
     width: 100vw;
     height: 380px;
-    background-image: url("../../../images/MAIN_PIC-min.jpg");
+    background-image: url("../images/MAIN_PIC-min.jpg");
     background-size: contain;
   }
 }
@@ -3151,7 +3151,7 @@ html {
 .contact {
   width: 375px;
   height: 840px;
-  background-image: url("../../../images/PICTURE-min.jpg");
+  background-image: url("../images/PICTURE-min.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom center;
@@ -4029,7 +4029,7 @@ html {
 .blog__header__img {
   width: 100vw;
   height: 210px;
-  background-image: url("../../../images/Rectangle 101-min.jpg");
+  background-image: url("../images/Rectangle 101-min.jpg");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -4044,7 +4044,7 @@ html {
   .blog__header__img {
     height: 360px;
     width: 100vw;
-    background-image: url("../../../images/MAIN222-min.jpg");
+    background-image: url("../images/MAIN222-min.jpg");
     background-size: cover;
     background-position: center;
   }

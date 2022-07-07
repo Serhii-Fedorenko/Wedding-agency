@@ -1,6 +1,6 @@
 .packages__header__img {
     height: 250px;
-    background-image: url('../../../images/Rectangle\ 70-min.jpg');
+    background-image: url('../images/Rectangle\ 70-min.jpg');
     background-size: 100% 100%;
 
     @media screen and (min-width: $tablet) {
@@ -10,7 +10,7 @@
     @media screen and (min-width: $desktop) {
         width: 100vw;
         height: 380px;
-        background-image: url('../../../images/MAIN_PIC-min.jpg');
+        background-image: url('../images/MAIN_PIC-min.jpg');
         background-size: contain;
     }
 }
