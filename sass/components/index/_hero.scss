@@ -11,12 +11,6 @@
   background-size: cover;
   background-position: -160px 0px;
 
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url('../images/desktop-hero@2x-min.png');
-  }
-
   @media screen and (min-width: 600px) {
     background-repeat: no-repeat;
   }
@@ -24,24 +18,12 @@
   @media screen and (min-width: $tablet) {
     background-image: url('../images/desktop-hero-min.png');
     background-position: -180px 0px;
-
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url('../images/desktop-hero@2x-min.png');
-    }
   }
 
   @media screen and (min-width: $desktop) {
     height: 100vh;
     background-size: contain;
     background-position: 0 0px;
-
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url('../images/desktop-hero@2x-min.png');
-    }
   }
 }
 

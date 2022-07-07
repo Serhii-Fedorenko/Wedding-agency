@@ -523,12 +523,6 @@ html {
   background-position: -160px 0px;
 }
 
-@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .hero {
-    background-image: url("../images/desktop-hero@2x-min.png");
-  }
-}
-
 @media screen and (min-width: 600px) {
   .hero {
     background-repeat: no-repeat;
@@ -542,23 +536,11 @@ html {
   }
 }
 
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .hero {
-    background-image: url("../images/desktop-hero@2x-min.png");
-  }
-}
-
 @media screen and (min-width: 1440px) {
   .hero {
     height: 100vh;
     background-size: contain;
     background-position: 0 0px;
-  }
-}
-
-@media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
-  .hero {
-    background-image: url("../images/desktop-hero@2x-min.png");
   }
 }
 
@@ -780,7 +762,7 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 195px;
-  background-image: url("../../../images/Rectangle5-min.jpg");
+  background-image: url("../../images/Rectangle5-min.jpg");
   background-size: 800px auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -789,7 +771,7 @@ html {
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .portfolio {
-    background-image: url("../../../images/Rectangle5@2x-min.png");
+    background-image: url("../../images/Rectangle5@2x-min.png");
   }
 }
 
@@ -802,7 +784,7 @@ html {
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .portfolio {
-    background-image: url("../../../images/Rectangle5@2x-min.png");
+    background-image: url("../../images/Rectangle5@2x-min.png");
   }
 }
 
